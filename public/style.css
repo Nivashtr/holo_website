@@ -76,6 +76,9 @@ nav ul li a:not(.noHover):hover::after {
     .heroImgContainer{
         display: none;
     }
+    #doc{
+        display: none;
+    }
   }
   
   /* Desktop (1024px and above) */

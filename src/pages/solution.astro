@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/3.3.5/tailwind.min.css" rel="stylesheet">
-    <script src="/script.js" defer></script>
+    <!-- <script src="/script.js" defer></script> -->
     <title>HOLO</title>
 </head>
 <body>
@@ -59,7 +59,7 @@
         </header>
         <section class="px-6 md:px-9 lg:px-12 py-6 md:py-9 lg:py-12 text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-6 md:gap-12 max-w-screen-xl mx-auto">
             <div class="md:w-1/2 space-y-4">
-                <h2 class="font-bold text-[36px] md:text-[48px] lg:text-[64px] text-blue-900 leading-tight">
+                <h2 class="font-bold text-[36px] sm:text-[38px] md:text-[38px] lg:text-[54px] text-blue-900 leading-tight">
                     Enhancing healthcare with innovative and smart solutions.
                 </h2>
                 <p class="text-[18px] md:text-[20px] lg:text-[24px] text-gray-600 leading-relaxed">
@@ -183,34 +183,62 @@
         </div>
     </section>
     
-    <div class="flex flex-col md:justify-center md:ml-16 lg:flex-row lg:flex-nowrap h-auto min-h-screen p-6 md:p-9 gap-8">
-		<div class="flex-1 flex justify-center items-center p-6 bg-white md:min-w-[300px] sm:w-[100px]">
-			<img src="https://i.postimg.cc/DzbM9NPm/i-Pad-Air-2022.png"
-				class="h-[506px] sm:h-[280px] md:h-[380px] lg:h-[480px] xl:h-[520px] md:w-auto md:max-w-full sm:w-[100px]">
-		</div>
-		<div class="flex-1 flex justify-center items-center p-6 bg-white md:min-w-[300px] sm:w-[100px]">
-			<ul class="font-medium text-xs sm:text-sm md:text-lg text-blue-600 space-y-2 md:space-y-4 text-start w-full">
-				<li class="border border-gray-300 rounded-full px-4 py-2"><i class="fa-solid fa-square-check" style="color: #1bda54;"/> Appointment Management </li>
-				<li class="border border-gray-300 rounded-full px-4 py-2"><i class="fa-solid fa-square-check" style="color: #1bda54;"/> Event Tracking & Reporting</li>
-				<li class="border border-gray-300 rounded-full px-4 py-2"><i class="fa-solid fa-square-check" style="color: #1bda54;"/> Digital Case-Sheets</li>
-				<li class="border border-gray-300 rounded-full px-4 py-2"><i class="fa-solid fa-square-check" style="color: #1bda54;"/> Electronic Medical Records (EMR)</li>
-				<li class="border border-gray-300 rounded-full px-4 py-2"><i class="fa-solid fa-square-check" style="color: #1bda54;"/> Voice Notes Recording</li>
-				<li class="border border-gray-300 rounded-full px-4 py-2"><i class="fa-solid fa-square-check" style="color: #1bda54;"/> Billing & GST Invoicing</li>
-				<li class="border border-gray-300 rounded-full px-4 py-2"><i class="fa-solid fa-square-check" style="color: #1bda54;"/> Omni-Channel Communication</li>
-				<li class="border border-gray-300 rounded-full px-4 py-2"><i class="fa-solid fa-square-check" style="color: #1bda54;"/> Role-Based Access</li>
-				<li class="border border-gray-300 rounded-full px-4 py-2"><i class="fa-solid fa-square-check" style="color: #1bda54;"/> External Integration</li>
-			</ul>
-		</div>
-		<div class="flex-1 flex flex-col justify-center md:items-start p-6 bg-white w-full md:max-w-[500px] h-auto flex-shrink-0 mb-6 md:mb-10">
-			<h2 class="font-bold text-xl sm:text-2xl md:text-3xl xl:text-2xl text-blue-900 text-center md:text-left mb-4">
-				Smart Solutions for Seamless Healthcare Enhancing Workflows, Improving Care
-			</h2>
-			<p class="text-gray-700 text-sm sm:text-sm md:text-lg xl:text-sm leading-relaxed text-center md:text-left">
-				HOLO is an advanced digital healthcare solution designed to optimize clinical workflows and enhance patient management. With an intuitive interface, it empowers healthcare professionals through key features such as Appointment Management, Digital Case Sheets, Electronic Medical Records (EMR), Voice Notes Recording, Billing & GST Invoicing, and Role-Based Access. Additionally, advanced functionalities like Event Tracking & Reporting, Omni-Channel Communication, and External Integration ensure seamless coordination between doctors, patients, and healthcare facilities. HOLO’s intelligent automation boosts efficiency, minimizes paperwork, and enhances decision-making—leading to improved patient outcomes and a truly digital-first healthcare experience. With its scalable and secure platform, HOLO is built to support healthcare providers of all sizes, from small clinics to large hospital networks.
-			</p>
-		</div>
-	</div>
-	
+    <!-- <div class="flex flex-col md:justify-center md:ml-16 lg:flex-row lg:flex-nowrap h-auto min-h-screen p-6 md:p-9 gap-8"> -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+            <div class="flex flex-col justify-center items-center p-6 bg-white h-full flex-grow">
+                <img src="https://i.postimg.cc/DzbM9NPm/i-Pad-Air-2022.png"
+                    class="h-[506px] sm:h-[280px] md:h-[506px] lg:h-[480px] xl:h-[520px] w-auto">
+            </div>
+            <div class="flex flex-col justify-center p-6 bg-white h-full flex-grow">
+                <ul class="font-medium text-sm sm:text-sm md:text-[16px] text-blue-600 space-y-2 text-start w-full">
+                    <li class="border border-gray-300 rounded-full px-4 py-2 flex items-center">
+                        <i class="fa-solid fa-square-check text-green-500 mr-2"></i> Appointment Management
+                    </li>
+                    <li class="border border-gray-300 rounded-full px-4 py-2 flex items-center">
+                        <i class="fa-solid fa-square-check text-green-500 mr-2"></i> Event Tracking & Reporting
+                    </li>
+                    <li class="border border-gray-300 rounded-full px-4 py-2 flex items-center">
+                        <i class="fa-solid fa-square-check text-green-500 mr-2"></i> Digital Case-Sheets
+                    </li>
+                    <li class="border border-gray-300 rounded-full px-4 py-2 flex items-center">
+                        <i class="fa-solid fa-square-check text-green-500 mr-2"></i> Electronic Medical Records (EMR)
+                    </li>
+                    <li class="border border-gray-300 rounded-full px-4 py-2 flex items-center">
+                        <i class="fa-solid fa-square-check text-green-500 mr-2"></i> Voice Notes Recording
+                    </li>
+                    <li class="border border-gray-300 rounded-full px-4 py-2 flex items-center">
+                        <i class="fa-solid fa-square-check text-green-500 mr-2"></i> Billing & GST Invoicing
+                    </li>
+                    <li class="border border-gray-300 rounded-full px-4 py-2 flex items-center">
+                        <i class="fa-solid fa-square-check text-green-500 mr-2"></i> Omni-Channel Communication
+                    </li>
+                    <li class="border border-gray-300 rounded-full px-4 py-2 flex items-center">
+                        <i class="fa-solid fa-square-check text-green-500 mr-2"></i> Role-Based Access
+                    </li>
+                    <li class="border border-gray-300 rounded-full px-4 py-2 flex items-center">
+                        <i class="fa-solid fa-square-check text-green-500 mr-2"></i> External Integration
+                    </li>
+                </ul>
+            </div>
+            <div class="flex flex-col justify-center p-6 bg-white h-full flex-grow">
+                <h2 class="font-bold text-xl sm:text-xl md:text-xl xl:text-xl text-blue-900 text-center md:text-left mb-4">
+                    Smart Solutions for Seamless Healthcare Enhancing Workflows, Improving Care
+                </h2>
+                <p class="text-gray-700 text-sm sm:text-sm md:text-sm xl:text-sm leading-5 text-center md:text-left">
+                    HOLO is an advanced digital healthcare solution designed to optimize clinical workflows and enhance 
+                    patient management. With an intuitive interface, it empowers healthcare professionals through key 
+                    features such as Appointment Management, Digital Case Sheets, Electronic Medical Records (EMR), 
+                    Voice Notes Recording, Billing & GST Invoicing, and Role-Based Access. 
+                    Additionally, advanced functionalities like Event Tracking & Reporting, Omni-Channel Communication, 
+                    and External Integration ensure seamless coordination between doctors, patients, and healthcare facilities. 
+                    HOLO’s intelligent automation boosts efficiency, minimizes paperwork, and enhances decision-making—leading 
+                    to improved patient outcomes and a truly digital-first healthcare experience.
+                </p>
+            </div>
+        </div>
+        
+        
+    <!-- </div> -->
     <div class="mt-10 md:mt-[72px] lg:mt-[52px] mx-4 md:mx-10 p-6 md:p-9">
         <div class="flex flex-col lg:flex-row p-6 md:p-14 rounded-[40px] border border-gray-300 bg-white">
             <div class="lg:w-1/3 space-y-4 relative w-full sm:w-[490px] h-auto md:h-[499px]">
@@ -243,24 +271,24 @@
                 </div>
             </div>
     
-            <div class="lg:w-1/6 hidden lg:block"></div>
+            <div class="lg:w-1/6 hidden lg:block lg:ml-7 lg:mr-9"></div>
             <div class="lg:w-1/2 mt-6 lg:mt-0 space-y-6 p-6 rounded-[40px] border border-gray-300 w-full">
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                         <label class="block text-sm">Your first name</label>
-                        <input type="text" placeholder="Enter your first name" class="w-full p-3 border border-gray-300 rounded-[40px] text-sm">
+                        <input type="text" placeholder="Enter your first name" class="w-full p-3 border border-gray-300 rounded-[40px] text-[12px]">
                     </div>
                     <div>
-                        <label class="block text-sm">Your last name</label>
-                        <input type="text" placeholder="Enter your last name" class="w-full p-3 border border-gray-300 rounded-[40px] text-sm">
+                        <label class="block text-sm ">Your last name</label>
+                        <input type="text" placeholder="Enter your last name" class="w-full p-3 border border-gray-300 rounded-[40px] text-[12px]">
                     </div>
                     <div>
                         <label class="block text-sm">Email</label>
-                        <input type="email" placeholder="Enter your email" class="w-full p-3 border border-gray-300 rounded-[40px] text-sm">
+                        <input type="email" placeholder="Enter your email" class="w-full p-3 border border-gray-300 rounded-[40px] text-[12px]">
                     </div>
                     <div>
                         <label class="block text-sm">Preferred date & time</label>
-                        <input type="datetime-local" class="w-full p-3 border border-gray-300 rounded-[40px] text-sm">
+                        <input type="datetime-local" class="w-full p-3 border border-gray-300 rounded-[40px] text-[12px]">
                     </div>
                 </div>
     
@@ -270,8 +298,8 @@
                 </div>
     
                 <div class="grid grid-cols-2 gap-4">
-                    <button class="w-full py-3 border border-gray-300 rounded-[40px] text-sm">Close</button>
-                    <button class="w-full py-3 bg-blue-600 text-white rounded-[40px] text-sm">Book a Free Demo</button>
+                    <button class="w-full py-3 border border-gray-300 rounded-[40px] h-10 text-sm">Close</button>
+                    <button class="w-full py-3 bg-blue-600 text-white rounded-[40px] h-10 text-[10px]">Book a Free Demo</button>
                 </div>
                 <div class="flex items-start space-x-2 md:space-x-3 text-start">
                     <input type="checkbox"

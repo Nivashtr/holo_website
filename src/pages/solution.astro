@@ -1,3 +1,6 @@
+---
+import "./global.css";
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,8 +14,8 @@
     <title>HOLO</title>
 </head>
 <body>
-    <div class="p-9">
-        <header class="relative">
+    <div class="p-6">
+        <header class="relative p-9">
             <div class="header flex items-center justify-between relative">
                 <img src="https://i.postimg.cc/zv5Gz3Wx/HOLO.png" alt="holo" class="h-5">
                 <button id="menu-btn" class="md:hidden text-[#004A86] text-2xl focus:outline-none"
@@ -33,9 +36,7 @@
                        hover:after:w-full">
                         Solution
                     </li>
-                    <li class="cursor-pointer relative hover:text-blue-700 transition-all duration-300 ease-in-out 
-                    after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] 
-                    after:bg-blue-700 after:transition-all after:duration-300 after:ease-in-out hover:after:w-[43px]">
+                    <li class="cursor-pointer relative">
                         <div class="flex items-center space-x-2">
                             <a href="/abhd"><span>ABDM</span></a>
                             <img src="https://i.postimg.cc/28Yxfd5n/down-Arrow.png" alt="Arrow"
@@ -59,7 +60,7 @@
         </header>
         <section class="px-6 md:px-9 lg:px-12 py-6 md:py-9 lg:py-12 text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-6 md:gap-12 max-w-screen-xl mx-auto">
             <div class="md:w-1/2 space-y-4">
-                <h2 class="font-bold text-[36px] sm:text-[38px] md:text-[38px] lg:text-[54px] text-blue-900 leading-tight">
+                <h2 class="font-bold text-[36px] sm:text-[38px] md:text-[38px] lg:text-[44px] text-blue-900 leading-tight">
                     Enhancing healthcare with innovative and smart solutions.
                 </h2>
                 <p class="text-[18px] md:text-[20px] lg:text-[24px] text-gray-600 leading-relaxed">
@@ -187,44 +188,44 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
             <div class="flex flex-col justify-center items-center p-6 bg-white h-full flex-grow">
                 <img src="https://i.postimg.cc/DzbM9NPm/i-Pad-Air-2022.png"
-                    class="h-[506px] sm:h-[280px] md:h-[506px] lg:h-[480px] xl:h-[520px] w-auto">
+                    class="h-[506px] sm:h-[280px] md:h-[506px] lg:h-[480px] xl:h-[420px] w-auto">
             </div>
             <div class="flex flex-col justify-center p-6 bg-white h-full flex-grow">
-                <ul class="font-medium text-sm sm:text-sm md:text-[16px] text-blue-600 space-y-2 text-start w-full">
+                <ul class="font-medium text-sm sm:text-sm md:text-[14px] text-blue-600 space-y-2 text-start w-full">
                     <li class="border border-gray-300 rounded-full px-4 py-2 flex items-center">
-                        <i class="fa-solid fa-square-check text-green-500 mr-2"></i> Appointment Management
+                        <i class="fa-solid fa-square-check text-green-500 mr-2"></i>  Appointment Management
                     </li>
                     <li class="border border-gray-300 rounded-full px-4 py-2 flex items-center">
-                        <i class="fa-solid fa-square-check text-green-500 mr-2"></i> Event Tracking & Reporting
+                        <i class="fa-solid fa-square-check text-green-500 mr-2"></i>  Event Tracking & Reporting
                     </li>
                     <li class="border border-gray-300 rounded-full px-4 py-2 flex items-center">
-                        <i class="fa-solid fa-square-check text-green-500 mr-2"></i> Digital Case-Sheets
+                        <i class="fa-solid fa-square-check text-green-500 mr-2"></i>  Digital Case-Sheets
                     </li>
                     <li class="border border-gray-300 rounded-full px-4 py-2 flex items-center">
-                        <i class="fa-solid fa-square-check text-green-500 mr-2"></i> Electronic Medical Records (EMR)
+                        <i class="fa-solid fa-square-check text-green-500 mr-2"></i>  Electronic Medical Records (EMR)
                     </li>
                     <li class="border border-gray-300 rounded-full px-4 py-2 flex items-center">
-                        <i class="fa-solid fa-square-check text-green-500 mr-2"></i> Voice Notes Recording
+                        <i class="fa-solid fa-square-check text-green-500 mr-2"></i>  Voice Notes Recording
                     </li>
                     <li class="border border-gray-300 rounded-full px-4 py-2 flex items-center">
-                        <i class="fa-solid fa-square-check text-green-500 mr-2"></i> Billing & GST Invoicing
+                        <i class="fa-solid fa-square-check text-green-500 mr-2"></i>  Billing & GST Invoicing
                     </li>
                     <li class="border border-gray-300 rounded-full px-4 py-2 flex items-center">
-                        <i class="fa-solid fa-square-check text-green-500 mr-2"></i> Omni-Channel Communication
+                        <i class="fa-solid fa-square-check text-green-500 mr-2"></i>  Omni-Channel Communication
                     </li>
                     <li class="border border-gray-300 rounded-full px-4 py-2 flex items-center">
-                        <i class="fa-solid fa-square-check text-green-500 mr-2"></i> Role-Based Access
+                        <i class="fa-solid fa-square-check text-green-500 mr-2"></i>  Role-Based Access
                     </li>
                     <li class="border border-gray-300 rounded-full px-4 py-2 flex items-center">
-                        <i class="fa-solid fa-square-check text-green-500 mr-2"></i> External Integration
+                        <i class="fa-solid fa-square-check text-green-500 mr-2"></i>  External Integration
                     </li>
                 </ul>
             </div>
             <div class="flex flex-col justify-center p-6 bg-white h-full flex-grow">
-                <h2 class="font-bold text-xl sm:text-xl md:text-xl xl:text-xl text-blue-900 text-center md:text-left mb-4">
+                <h2 class="font-bold text-xl sm:text-xl md:text-[16px] xl:text-2xl text-blue-900 text-center md:text-left mb-4">
                     Smart Solutions for Seamless Healthcare Enhancing Workflows, Improving Care
                 </h2>
-                <p class="text-gray-700 text-sm sm:text-sm md:text-sm xl:text-sm leading-5 text-center md:text-left">
+                <p class="text-gray-700 text-sm sm:text-sm md:text-xs xl:text-[16px] leading-5 text-center md:text-left">
                     HOLO is an advanced digital healthcare solution designed to optimize clinical workflows and enhance 
                     patient management. With an intuitive interface, it empowers healthcare professionals through key 
                     features such as Appointment Management, Digital Case Sheets, Electronic Medical Records (EMR), 
@@ -240,7 +241,7 @@
         
     <!-- </div> -->
     <div class="mt-10 md:mt-[72px] lg:mt-[52px] mx-4 md:mx-10 p-6 md:p-9">
-        <div class="flex flex-col lg:flex-row p-6 md:p-14 rounded-[40px] border border-gray-300 bg-white">
+        <div class="flex flex-col lg:flex-row p-6 md:p-14 rounded-[30px] border border-gray-300 bg-white">
             <div class="lg:w-1/3 space-y-4 relative w-full sm:w-[490px] h-auto md:h-[499px]">
                 <h2 class="font-semibold text-3xl md:text-4xl text-blue-900">Book a demo today!</h2>
                 <p class="text-base md:text-lg leading-relaxed text-[#535353] md:w-[409px]">
@@ -272,7 +273,7 @@
             </div>
     
             <div class="lg:w-1/6 hidden lg:block lg:ml-7 lg:mr-9"></div>
-            <div class="lg:w-1/2 mt-6 lg:mt-0 space-y-6 p-6 rounded-[40px] border border-gray-300 w-full">
+            <div class="lg:w-1/2 mt-6 lg:mt-0 space-y-6 p-6 rounded-[30px] border border-gray-300 w-full">
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                         <label class="block text-sm">Your first name</label>
@@ -303,7 +304,7 @@
                 </div>
                 <div class="flex items-start space-x-2 md:space-x-3 text-start">
                     <input type="checkbox"
-                        class="w-4 md:w-5 h-4 md:h-5 border-gray-400 rounded focus:ring-blue-600">
+                        class="w-4 md:w-4 h-4 md:h-5 border-gray-400 rounded focus:ring-blue-600">
                     <p class="text-gray-600 text-sm font-light text-[16px] [word-spacing:2px]">
                         I wish to receive newsletters from Holo
                     </p>

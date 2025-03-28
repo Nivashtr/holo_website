@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/3.3.5/tailwind.min.css" rel="stylesheet">
+    <title>HOLO</title>
+</head>
+<body>
+    <div class="p-9">
+        <header class="relative">
+            <div class="header flex items-center justify-between relative">
+                <img src="https://i.postimg.cc/zv5Gz3Wx/HOLO.png" alt="holo" class="h-5">
+                <button id="menu-btn" class="md:hidden text-[#004A86] text-2xl focus:outline-none"
+                    aria-expanded="false">
+                    &#9776;
+                </button>
+
+                <ul class="hidden md:flex space-x-16 text-[15px] text-[#004A86]">
+                    <li class="cursor-pointer relative hover:text-blue-700 transition-all duration-300 ease-in-out 
+                      after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-blue-700 after:transition-all after:duration-300 after:ease-in-out 
+                       hover:after:w-full">
+                       <a href="/">
+                            Home
+                       </a>
+                    </li>
+                    <li class="cursor-pointer relative hover:text-blue-700 transition-all duration-300 ease-in-out 
+                      after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-blue-700 after:transition-all after:duration-300 after:ease-in-out 
+                       hover:after:w-full">
+                        Solution
+                    </li>
+                    <li class="cursor-pointer relative hover:text-blue-700 transition-all duration-300 ease-in-out 
+                    after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] 
+                    after:bg-blue-700 after:transition-all after:duration-300 after:ease-in-out hover:after:w-[43px]">
+                        <div class="flex items-center space-x-2">
+                            <span>ABDM</span>
+                            <img src="https://i.postimg.cc/28Yxfd5n/down-Arrow.png" alt="Arrow"
+                                class="w-[10px] h-auto" />
+                        </div>
+                    </li>
+                    <li class="cursor-pointer relative hover:text-blue-700 transition-all duration-300 ease-in-out 
+                      after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-blue-700 after:transition-all after:duration-300 after:ease-in-out 
+                       hover:after:w-full">
+                        Hub
+                    </li>
+                </ul>
+            </div>
+            <ul id="mobile-menu"
+                class="hidden absolute top-full left-0 w-full flex-col space-y-7 text-[16px] text-[#004A86] bg-white shadow-md p-4 rounded-lg z-50">
+                <li class="cursor-pointer hover:text-blue-700"><a href="/">Home</a></li>
+                <li class="cursor-pointer hover:text-blue-700">Solution</li>
+                <li class="cursor-pointer hover:text-blue-700">ABDM</li>
+                <li class="cursor-pointer hover:text-blue-700">Hub</li>
+            </ul>
+        </header>
+        <section class="px-6 md:px-9 lg:px-12 py-6 md:py-9 lg:py-12 text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-6 md:gap-12 max-w-screen-xl mx-auto">
+            <div class="md:w-1/2 space-y-4">
+                <h2 class="font-bold text-[36px] md:text-[48px] lg:text-[64px] text-blue-900 leading-tight">
+                    Enhancing healthcare with innovative and smart solutions.
+                </h2>
+                <p class="text-[18px] md:text-[20px] lg:text-[24px] text-gray-600 leading-relaxed">
+                    HOLO is an advanced Vertical SaaS suite designed to revolutionize healthcare management. By integrating Electronic Medical Records (EMR), Hospital Management Systems, and AI-powered workflows, HOLO simplifies complex processes, ensuring seamless, paperless, and efficient healthcare operations.
+                </p>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://i.postimg.cc/Vv1Y2mqf/Group-427319951.png" class="w-full max-w-sm md:max-w-md lg:max-w-lg">
+            </div>
+        </section>
+        
+    </div>
+    <div class="relative w-full">
+        <img src="https://i.postimg.cc/DZ7Z0Thw/Clip-path-group-1.png" class="absolute inset-0 w-full object-cover">
+    </div>    
+    <section class="ml-4 md:ml-12 p-6 md:p-9">
+        <div class="mt-10 md:mt-[76.81px] lg:mt-[200px]">
+            <h2 class="text-2xl md:text-3xl font-bold text-center md:text-center text-[32px] md:text-[40px] text-blue-900">
+                Product Features
+            </h2>
+            <p class="font-normal text-base md:text-[18px] mt-4 text-[#4B596D]">
+                HOLO offers a comprehensive suite of features designed to streamline hospital operations. From digital case sheets and automated workflow management to real-time tracking and secure patient records, our platform ensures efficiency, accuracy, and a seamless healthcare experience.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-10">
+                <div class="bg-[#F3FBFF] p-6 rounded-3xl shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105">
+                    <span class="block w-10 h-10 mx-auto md:mx-0">
+                        <img src="https://i.postimg.cc/7Ymcyw3B/tabler-icon-device-ipad.png" class="w-full">
+                    </span>
+                    <h2 class="font-medium text-lg mt-2 text-center md:text-left">
+                        Smart appointment management
+                    </h2>
+                    <p class="font-normal text-base mt-2 text-gray-500 text-center md:text-left">
+                        Effortlessly schedule, modify, and organize patient visits with a seamless calendar-based system, ensuring smooth clinic operations.
+                    </p>
+                </div>
+    
+                <div class="bg-[#F3FBFF] p-6 rounded-3xl shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105">
+                    <span class="block w-10 h-10 mx-auto md:mx-0">
+                        <img src="https://i.postimg.cc/fRVHnXTL/Vector-1.png" class="w-full">
+                    </span>
+                    <h2 class="font-medium text-lg mt-2 text-center md:text-left">
+                        Electronic medical records (EMR)
+                    </h2>
+                    <p class="font-normal text-base mt-2 text-gray-500 text-center md:text-left">
+                        Go paperless with customizable case sheets, enabling doctors to document, annotate, and retrieve patient records instantly.
+                    </p>
+                </div>
+    
+                <div class="bg-[#F3FBFF] p-6 rounded-3xl shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105">
+                    <span class="block w-10 h-10 mx-auto md:mx-0">
+                        <img src="https://i.postimg.cc/wBJ03pNY/Frame-1.png" class="w-full">
+                    </span>
+                    <h2 class="font-medium text-lg mt-2 text-center md:text-left">
+                        Digital case sheets management
+                    </h2>
+                    <p class="font-normal text-base mt-2 text-gray-500 text-center md:text-left">
+                        Connect your ABHA ID to your Personal Health Records (PHR) for a seamless and comprehensive health history.
+                    </p>
+                </div>
+    
+                <div class="bg-[#F3FBFF] p-6 rounded-3xl shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105">
+                    <span class="block w-10 h-10 mx-auto md:mx-0">
+                        <img src="https://i.postimg.cc/ncg4mWpF/Frame-2.png" class="w-full">
+                    </span>
+                    <h2 class="font-medium text-lg mt-2 text-center md:text-left">
+                        Voice & touch notations
+                    </h2>
+                    <p class="font-normal text-base mt-2 text-gray-500 text-center md:text-left">
+                        Doctors can scribble notes or record voice memos directly into patient files for efficient and accurate medical documentation.
+                    </p>
+                </div>
+    
+                <div class="bg-[#F3FBFF] p-6 rounded-3xl shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105">
+                    <span class="block w-10 h-10 mx-auto md:mx-0">
+                        <img src="https://i.postimg.cc/CM6ky2ZG/Frame-3.png" class="w-full">
+                    </span>
+                    <h2 class="font-medium text-lg mt-2 text-center md:text-left">
+                        Streamlined patient & billing management
+                    </h2>
+                    <p class="font-normal text-base mt-2 text-gray-500 text-center md:text-left">
+                        Simplify patient invoicing, rate plans, and GST compliance with automated billing workflows, reducing manual errors.
+                    </p>
+                </div>
+    
+                <div class="bg-[#F3FBFF] p-6 rounded-3xl shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105">
+                    <span class="block w-10 h-10 mx-auto md:mx-0">
+                        <img src="https://i.postimg.cc/9fJzd4Zd/Frame-4.png" class="w-full">
+                    </span>
+                    <h2 class="font-medium text-lg mt-2 text-center md:text-left">
+                        Doctor discovery platform
+                    </h2>
+                    <p class="font-normal text-base mt-2 text-gray-500 text-center md:text-left">
+                        Help patients connect with specialists and healthcare providers based on their specific needs, ensuring better healthcare access.
+                    </p>
+                </div>
+    
+                <div class="bg-[#F3FBFF] p-6 rounded-3xl shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105">
+                    <span class="block w-10 h-10 mx-auto md:mx-0">
+                        <img src="https://i.postimg.cc/MX2G61JS/Frame-5.png" class="w-full">
+                    </span>
+                    <h2 class="font-medium text-lg mt-2 text-center md:text-left">
+                        Surgery & consent tracking
+                    </h2>
+                    <p class="font-normal text-base mt-2 text-gray-500 text-center md:text-left">
+                        Manage surgical workflows, track consent forms, and ensure compliance, enhancing the efficiency of surgical procedures and follow-ups.
+                    </p>
+                </div>
+    
+                <div class="bg-[#F3FBFF] p-6 rounded-3xl shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105">
+                    <span class="block w-10 h-10 mx-auto md:mx-0">
+                        <img src="https://i.postimg.cc/6Q341L9j/Frame-6.png" class="w-full">
+                    </span>
+                    <h2 class="font-medium text-lg mt-2 text-center md:text-left">
+                        Omni-channel communication
+                    </h2>
+                    <p class="font-normal text-base mt-2 text-gray-500 text-center md:text-left">
+                        Send important updates, appointment reminders, and medical reports via WhatsApp, SMS, and email, keeping patients informed.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="flex flex-col md:justify-center md:ml-16 lg:flex-row lg:flex-nowrap h-auto min-h-screen p-6 md:p-9 gap-8">
+		<div class="flex-1 flex justify-center items-center p-6 bg-white md:min-w-[300px] sm:w-[100px]">
+			<img src="https://i.postimg.cc/DzbM9NPm/i-Pad-Air-2022.png"
+				class="h-[506px] sm:h-[280px] md:h-[380px] lg:h-[480px] xl:h-[520px] md:w-auto md:max-w-full sm:w-[100px]">
+		</div>
+		<div class="flex-1 flex justify-center items-center p-6 bg-white md:min-w-[300px] sm:w-[100px]">
+			<ul class="font-medium text-xs sm:text-sm md:text-lg text-blue-600 space-y-2 md:space-y-4 text-start w-full">
+				<li class="border border-gray-300 rounded-full px-4 py-2"><i class="fa-solid fa-square-check" style="color: #1bda54;"/> Appointment Management </li>
+				<li class="border border-gray-300 rounded-full px-4 py-2"><i class="fa-solid fa-square-check" style="color: #1bda54;"/> Event Tracking & Reporting</li>
+				<li class="border border-gray-300 rounded-full px-4 py-2"><i class="fa-solid fa-square-check" style="color: #1bda54;"/> Digital Case-Sheets</li>
+				<li class="border border-gray-300 rounded-full px-4 py-2"><i class="fa-solid fa-square-check" style="color: #1bda54;"/> Electronic Medical Records (EMR)</li>
+				<li class="border border-gray-300 rounded-full px-4 py-2"><i class="fa-solid fa-square-check" style="color: #1bda54;"/> Voice Notes Recording</li>
+				<li class="border border-gray-300 rounded-full px-4 py-2"><i class="fa-solid fa-square-check" style="color: #1bda54;"/> Billing & GST Invoicing</li>
+				<li class="border border-gray-300 rounded-full px-4 py-2"><i class="fa-solid fa-square-check" style="color: #1bda54;"/> Omni-Channel Communication</li>
+				<li class="border border-gray-300 rounded-full px-4 py-2"><i class="fa-solid fa-square-check" style="color: #1bda54;"/> Role-Based Access</li>
+				<li class="border border-gray-300 rounded-full px-4 py-2"><i class="fa-solid fa-square-check" style="color: #1bda54;"/> External Integration</li>
+			</ul>
+		</div>
+		<div class="flex-1 flex flex-col justify-center md:items-start p-6 bg-white w-full md:max-w-[500px] h-auto flex-shrink-0 mb-6 md:mb-10">
+			<h2 class="font-bold text-xl sm:text-2xl md:text-3xl xl:text-2xl text-blue-900 text-center md:text-left mb-4">
+				Smart Solutions for Seamless Healthcare Enhancing Workflows, Improving Care
+			</h2>
+			<p class="text-gray-700 text-sm sm:text-sm md:text-lg xl:text-sm leading-relaxed text-center md:text-left">
+				HOLO is an advanced digital healthcare solution designed to optimize clinical workflows and enhance patient management. With an intuitive interface, it empowers healthcare professionals through key features such as Appointment Management, Digital Case Sheets, Electronic Medical Records (EMR), Voice Notes Recording, Billing & GST Invoicing, and Role-Based Access. Additionally, advanced functionalities like Event Tracking & Reporting, Omni-Channel Communication, and External Integration ensure seamless coordination between doctors, patients, and healthcare facilities. HOLO’s intelligent automation boosts efficiency, minimizes paperwork, and enhances decision-making—leading to improved patient outcomes and a truly digital-first healthcare experience. With its scalable and secure platform, HOLO is built to support healthcare providers of all sizes, from small clinics to large hospital networks.
+			</p>
+		</div>
+	</div>
+	
+    <div class="mt-10 md:mt-[72px] lg:mt-[52px] mx-4 md:mx-10 p-6 md:p-9">
+        <div class="flex flex-col lg:flex-row p-6 md:p-14 rounded-[40px] border border-gray-300 bg-white">
+            <div class="lg:w-1/3 space-y-4 relative w-full sm:w-[490px] h-auto md:h-[499px]">
+                <h2 class="font-semibold text-3xl md:text-4xl text-blue-900">Book a demo today!</h2>
+                <p class="text-base md:text-lg leading-relaxed text-[#535353] md:w-[409px]">
+                    Experience the power of Holo Health firsthand. Discover how our intuitive platform simplifies health management, enhances patient care, and streamlines operations. Schedule your free demo today and take the first step toward smarter healthcare!
+                </p>
+    
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-6 mt-4">
+                    <div class="flex flex-col justify-start">
+                        <img src="https://i.postimg.cc/W3FLNnLf/Frame-7.png" class="h-10 mx-auto">
+                        <h2 class="font-light text-xs text-center">Real-time health monitoring</h2>
+                    </div>
+                    <div class="flex flex-col justify-start">
+                        <img src="https://i.postimg.cc/SKNFY485/Frame-9.png" class="h-10 mx-auto">
+                        <h2 class="font-light text-xs text-center">AI-powered insights</h2>
+                    </div>
+                    <div class="flex flex-col justify-start">
+                        <img src="https://i.postimg.cc/pXDg0rJ4/Frame-10.png" class="h-10 mx-auto">
+                        <h2 class="font-light text-xs text-center">Seamless scheduling</h2>
+                    </div>
+                    <div class="flex flex-col justify-start">
+                        <img src="https://i.postimg.cc/TP85TkDp/Frame-11.png" class="h-10 mx-auto">
+                        <h2 class="font-light text-xs text-center">Secure & easy-to-use</h2>
+                    </div>
+                    <div class="flex flex-col justify-start">
+                        <img src="https://i.postimg.cc/wvgtm7Fz/Frame-12.png" class="h-10 mx-auto">
+                        <h2 class="font-light text-xs text-center">Automated Billing & Payments</h2>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="lg:w-1/6 hidden lg:block"></div>
+            <div class="lg:w-1/2 mt-6 lg:mt-0 space-y-6 p-6 rounded-[40px] border border-gray-300 w-full">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-sm">Your first name</label>
+                        <input type="text" placeholder="Enter your first name" class="w-full p-3 border border-gray-300 rounded-[40px] text-sm">
+                    </div>
+                    <div>
+                        <label class="block text-sm">Your last name</label>
+                        <input type="text" placeholder="Enter your last name" class="w-full p-3 border border-gray-300 rounded-[40px] text-sm">
+                    </div>
+                    <div>
+                        <label class="block text-sm">Email</label>
+                        <input type="email" placeholder="Enter your email" class="w-full p-3 border border-gray-300 rounded-[40px] text-sm">
+                    </div>
+                    <div>
+                        <label class="block text-sm">Preferred date & time</label>
+                        <input type="datetime-local" class="w-full p-3 border border-gray-300 rounded-[40px] text-sm">
+                    </div>
+                </div>
+    
+                <div>
+                    <label class="block text-sm">How can we help you?</label>
+                    <textarea class="w-full p-3 border border-gray-300 rounded-[40px] text-sm h-[186px] resize-none" placeholder="Tell us a little about you"></textarea>
+                </div>
+    
+                <div class="grid grid-cols-2 gap-4">
+                    <button class="w-full py-3 border border-gray-300 rounded-[40px] text-sm">Close</button>
+                    <button class="w-full py-3 bg-blue-600 text-white rounded-[40px] text-sm">Book a Free Demo</button>
+                </div>
+                <div class="flex items-start space-x-2 md:space-x-3 text-start">
+                    <input type="checkbox"
+                        class="w-4 md:w-5 h-4 md:h-5 border-gray-400 rounded focus:ring-blue-600">
+                    <p class="text-gray-600 text-sm font-light text-[16px] [word-spacing:2px]">
+                        I wish to receive newsletters from Holo
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+       
+    <footer class="bg-[#004A86] text-white mt-[150px]">
+        <div class="relative py-4 px-4 md:px-20">
+            <div class="mt-[110px] max-w-6xl mx-auto text-center md:text-left">
+                <h2 class="text-3xl md:text-[46px] font-bold">Stay Informed</h2>
+                <div class="flex flex-col md:flex-row items-center gap-6 mt-6">
+                    <p class="text-lg md:text-xl font-normal text-center md:text-left">
+                        Sign up today to stay updated with the latest news, updates, and exciting developments about
+                        HOLO!
+                    </p>
+                    <div class="w-full md:w-auto flex justify-center">
+                        <div
+                            class="relative flex items-center bg-[#004A86] border-2 border-white rounded-full w-full md:w-[334px] p-1 py-3">
+                            <input type="email" placeholder="Enter your email"
+                                class="text-white placeholder-white bg-transparent px-4 pr-20 flex-grow outline-none"
+                                aria-label="Email">
+                            <button
+                                class="absolute right-[-1px] bg-white text-[#004A86] px-6 py-3 rounded-full font-semibold">
+                                Subscribe
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-6 gap-8 mt-16 text-sm text-center md:text-left">
+                    <div>
+                        <h3 class="font-bold text-lg">Cowin</h3>
+                        <ul class="mt-4 space-y-2 text-gray-300">
+                            <li>Book vaccination slot</li>
+                            <li>Download certificate</li>
+                            <li>Change mobile number</li>
+                            <li>Add passport details</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg">Products</h3>
+                        <ul class="mt-4 space-y-2 text-gray-300">
+                            <li>For doctors</li>
+                            <li>For patients</li>
+                            <li>GMB for doctors</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg">Specialities</h3>
+                        <ul class="mt-4 space-y-2 text-gray-300">
+                            <li>EMR for neurologists</li>
+                            <li>EMR for dentists</li>
+                            <li>EMR for pediatricians</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg">About</h3>
+                        <ul class="mt-4 space-y-2 text-gray-300">
+                            <li>Home</li>
+                            <li>API disclosure</li>
+                            <li>Team</li>
+                            <li>Careers</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg">Privacy & Security</h3>
+                        <ul class="mt-4 space-y-2 text-gray-300">
+                            <li>Terms and conditions</li>
+                            <li>Privacy policy</li>
+                            <li>Security</li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col items-center md:items-start">
+                        <img src="https://i.postimg.cc/nVwWfNJD/HOLO-2.png" alt="Holo2 Logo" class="w-28 mt-2" />
+                        <div class="flex space-x-5 mt-4">
+                            <img src="https://i.postimg.cc/xd05zPQQ/Link-1.png" alt="Facebook"
+                                class="w-6 h-6 cursor-pointer" />
+                            <img src="https://i.postimg.cc/B6zBR9KZ/Link-2.png" alt="Twitter"
+                                class="w-6 h-6 cursor-pointer" />
+                            <img src="https://i.postimg.cc/K4SrvPfd/Link-3.png" alt="Instagram"
+                                class="w-6 h-6 cursor-pointer" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="relative w-full h-60 bg-no-repeat bg-bottom bg-cover bottom-[64px]"
+            style="background-image: url('https://i.postimg.cc/rwmPfY9f/Clip-path-group.png');">
+        </div>
+    </footer>
+</body>
+</html>

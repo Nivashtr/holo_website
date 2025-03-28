@@ -1,0 +1,552 @@
+---
+// import "./global.css";
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>ABHA PAGE</title>
+    <!-- <link rel="stylesheet" href="/style.css"> -->
+    <script src="/script.js" defer></script>
+</head>
+
+<body>
+    <!-- Container Section 1   -->
+    <!-- Header Section    -->
+    <div class="container mx-auto p-9 max-w-[1175px]">
+        <header class="relative">
+            <div class="header flex items-center justify-between relative">
+                <img src="https://i.postimg.cc/zv5Gz3Wx/HOLO.png" alt="holo" class="h-5">
+                <button id="menu-btn" class="md:hidden text-[#004A86] text-2xl focus:outline-none"
+                    aria-expanded="false">
+                    &#9776;
+                </button>
+
+                <ul class="hidden md:flex space-x-16 text-[15px] text-[#004A86] ">
+                    <li class="cursor-pointer relative hover:text-blue-700 transition-all duration-300 ease-in-out 
+                      after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-blue-700 after:transition-all after:duration-300 after:ease-in-out 
+                       hover:after:w-full">
+                       <a href="/">Home</a> 
+                    </li>
+                    <li class="cursor-pointer relative hover:text-blue-700 transition-all duration-300 ease-in-out 
+                      after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-blue-700 after:transition-all after:duration-300 after:ease-in-out 
+                       hover:after:w-full">
+                       <a href="/solution">Solution</a> 
+                    </li>
+                    <li class="cursor-pointer relative hover:text-blue-700 transition-all duration-300 ease-in-out 
+                    after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] 
+                    after:bg-blue-700 after:transition-all after:duration-300 after:ease-in-out hover:after:w-[43px]">
+                        <div class="flex items-center space-x-2">
+                            <a href="/abhd"><span>ABDM</span></a>
+                            <img src="https://i.postimg.cc/28Yxfd5n/down-Arrow.png" alt="Arrow"
+                                class="w-[10px] h-auto" />
+                        </div>
+                    </li>
+                    <li class="cursor-pointer relative hover:text-blue-700 transition-all duration-300 ease-in-out 
+                      after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-blue-700 after:transition-all after:duration-300 after:ease-in-out 
+                       hover:after:w-full">
+                        Hub
+                    </li>
+                </ul>
+            </div>
+            <ul id="mobile-menu"
+                class="hidden absolute top-full left-0 w-full flex-col space-y-7 text-[16px] text-[#004A86] bg-white shadow-md p-4 rounded-lg z-50">
+                <li class="cursor-pointer hover:text-blue-700"><a href="/">Home</a></li>
+                <li class="cursor-pointer hover:text-blue-700"><a href="/solution">Solution</a></li>
+                <li class="cursor-pointer hover:text-blue-700"><a href="/abhd"></a>ABDM</li>
+                <li class="cursor-pointer hover:text-blue-700">Hub</li>
+            </ul>
+        </header>
+
+        <!-- head section 2         -->
+        <div class="mt-[50px] flex flex-col lg:flex-row justify-between items-start space-x-0 lg:space-x-5 ">
+            <div class="w-full lg:w-1/2">
+                <h2 class="text-[#004A86] text-[40px] font-bold">ABHA</h2>
+                <h3 class="text-[#004A86] font-normal mt-3 text-[30px] sm:text-[34px]">
+                    Ayushman Bharat Health Account or Health ID Card. Approved by NDHM.GOV.IN
+                </h3>
+                <p class="text-[#5A5A5A] text-[16px] md:text-[18px] font-normal leading-7 md:leading-8 mt-2">
+                    The ABHA card, managed under the Ayushman Bharat Digital Mission (ABDM) by the National Health
+                    Authority (NHA), is a digital healthcare initiative offering Indian citizens seamless access to
+                    medical treatments and healthcare facilities. It enables easy sign-ups for personal health record
+                    applications (like the ABDM ABHA app) while ensuring a trusted digital identity. Health records
+                    linked to ABHA numbers or Health IDs are accessible only with the individual’s informed consent.
+                    Users can also create an alias, known as an "ABHA address" (e.g., xyz@ndhm), secured with a
+                    password, for added privacy and convenience.
+                </p>
+            </div>
+            <div
+                class="w-full lg:w-1/2 text-right border border-[#C8C8C8] rounded-[20px] md:rounded-[32px] p-4 md:p-5 mt-6 lg:mt-0">
+                <p class="text-[#000000] text-[22px] md:text-[27px] font-medium text-center">
+                    Create Ayushman Bharat Health Account
+                    <span class="text-[#004A86] text-[22px] md:text-[27px] font-medium">ABHA (Health ID) Card</span>
+                </p>
+
+                <div class="flex bg-gray-200 p-1 rounded-full w-full h-12 md:h-14 mx-auto relative mt-6 md:mt-[28px]">
+                    <div id="toggleIndicator"
+                        class="absolute left-1 top-1 w-1/2 h-10 md:h-12 bg-[#004A86] rounded-full transition-all"></div>
+                    <button id="aadharBtn"
+                        class="w-1/2 py-2 text-white text-[12px] md:text-[14px] relative z-10 font-medium cursor-pointer">
+                        Aadhar number
+                    </button>
+                    <button id="mobileBtn"
+                        class="w-1/2 py-2 text-gray-600 text-[12px] md:text-[14px] relative z-10 font-medium cursor-pointer">
+                        Mobile number
+                    </button>
+                </div>
+
+                <div class="flex items-center justify-between w-full h-12 md:h-14 px-4 py-2 border border-gray-300 rounded-full shadow-sm bg-white mt-6 md:mt-7">
+                    <input id="aadharInput" type="text" inputmode="numeric" pattern="[0-9]*"
+                        placeholder="xxxx | xxxx | xxxx"
+                        class="text-[#505050] tracking-[4px] md:tracking-[8px] font-normal text-sm md:text-base text-center md:text-start md:ml-28 w-full outline-none transition-all" />
+                    
+                    <input id="mobileInput" type="text" inputmode="numeric" pattern="[0-9]*"
+                        placeholder="+91 | xxxxx xxxxx"
+                        class="text-[#505050] tracking-[4px] md:tracking-[8px] font-normal text-sm md:text-base text-center md:text-start md:ml-28 w-full hidden outline-none focus:block transition-all" />
+                </div>
+                
+                <div class="mx-auto p-4 md:p-6 bg-white mt-6 md:mt-[28px]">
+                    <div class="flex items-start space-x-2 md:space-x-3 text-start">
+                        <label class="flex items-start space-x-2 md:space-x-3 text-start cursor-pointer">
+                            <input type="checkbox"
+                                class="w-4 md:w-5 h-4 md:h-5 border-gray-400 rounded focus:ring-blue-600 cursor-pointer">
+                            <p class="text-gray-600 text-sm font-light text-[16px] [word-spacing:2px]">
+                                I agree to give the necessary permission to HOLO care to set up my ABHA health locker.
+                                <a href="#" class="text-blue-600 font-light text-[16px]">Learn More</a>
+                            </p>
+                        </label>
+                    </div>
+
+                    <button
+                        class="w-full md:w-[384px] mx-auto mt-6 md:mt-9 bg-[#004A86] text-white text-base md:text-lg font-normal px-4 py-2 md:py-3 rounded-full block cursor-pointer">
+                        Create ABHA
+                    </button>
+
+                    <div class="flex justify-center items-center mt-6 md:mt-[18px] space-x-6 md:space-x-8">
+                        <p class="text-gray-800 font-normal text-[14px] md:text-[16px]">Approved By NHA</p>
+                        <img src="https://i.postimg.cc/K84vv6kh/NHA.png" alt="NHA Logo"
+                            class="w-[40px] md:w-[52px] h-[24px] md:h-[32px]">
+                    </div>
+
+                    <p
+                        class="text-center text-gray-600 font-normal text-[12px] md:text-[14px] w-full md:w-[354px] mx-auto mt-6 md:mt-[18px]">
+                        By continuing, you agree to HOLO
+                        <a href="#" class="text-blue-600 font-medium">Terms of Service</a> &
+                        <a href="#" class="text-blue-600 font-medium">Privacy Policy</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-4 sm:mt-5">
+        <img src="https://i.postimg.cc/qvRmKM0q/Clipath-group.jpg" alt="Clipath"
+            class="w-full h-auto max-h-56 sm:max-h-64 md:max-h-72 lg:max-h-80 object-cover" />
+    </div>
+
+
+    <!-- Container Section  2  -->
+    <!-- Body section 1   -->
+    <div class="container mx-auto p-9 max-w-[1175px]">
+        <div class="flex items-center space-x-2">
+            <span class="bg-red-600 text-white px-5 py-2 rounded-full text-sm font-medium"> ● Live</span>
+        </div>
+        <h2 class="text-[#004A86] text-[26px] font-normal sm:text-[38px] mt-3">
+            The cumulative number of ABHA created & registered across states and union territories in India as per Govt.
+            of India @healthid.ndhm.gov.in
+        </h2>
+        <div class="flex flex-col md:flex-row gap-6 mt-[54px]">
+            <div class="border border-[#C8C8C8] rounded-[34px] overflow-hidden w-full md:w-2/3 flex-1 h-full">
+                <table class="w-full border-collapse">
+                    <tbody>
+                        <tr class="border-b border-[#C8C8C8] ">
+                            <td class="p-4 font-normal text-[17px] ">Scheme</td>
+                            <td class="p-4 font-light text-[15px] sm:text-[17px]">ABHA health card</td>
+                        </tr>
+                        <tr class="border-b border-[#C8C8C8] ">
+                            <td class="p-4 font-normal text-[17px] ">Launched by</td>
+                            <td class="p-4 font-light text-[15px] sm:text-[17px]">Ministry of Health and Family Welfare
+                            </td>
+                        </tr>
+                        <tr class="border-b border-[#C8C8C8] ">
+                            <td class="p-4 font-normal text-[17px]">Application Fee</td>
+                            <td class="p-4 font-light text-[15px] sm:text-[17px]">Free of cost</td>
+                        </tr>
+                        <tr class="border-b border-[#C8C8C8] ">
+                            <td class="p-4 font-normal text-[17px]">Document Necessary</td>
+                            <td class="p-4 font-light text-[15px] sm:text-[17px]">Aadhar card / Driving license</td>
+                        </tr>
+                        <tr class="border-b border-[#C8C8C8] ">
+                            <td class="p-4 font-normal text-[17px]">App</td>
+                            <td class="p-4 font-light text-[15px] sm:text-[17px]">Holo Care, ABHA App</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-normal text-[17px]">Website</td>
+                            <td class="p-4 font-light text-[15px] sm:text-[17px]">Holoverse.care</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="grid grid-cols-1 gap-4 w-full md:w-1/3 flex-1 h-full mt-6">
+                <div class="flex items-center bg-[#F8F8F8] p-4 rounded-[43px] h-full">
+                    <img src="https://i.postimg.cc/0NDvzP9F/Frame-1.png" alt="Frame1" class="w-[60px] h-[60px]" />
+                    <p class="text-black-700 font-light text-[15px] sm:text-[17px] ml-3">ABHA created</p>
+                    <span class="ml-auto text-black text-[15px] sm:text-[18px] font-medium" id="counter">0</span>
+                </div>
+                <div class="flex items-center bg-[#F8F8F8] p-4 rounded-[43px] h-full">
+                    <img src="https://i.postimg.cc/nzxJ7gzz/Frame-2.png" alt="Frame2" class="w-[60px] h-[60px]" />
+                    <p class="text-black-700 font-light text-[15px] sm:text-[17px] ml-3">Verified Facilities On HFR</p>
+                    <span class="ml-auto text-black text-[15px] sm:text-[18px] font-medium" id="counter2">0</span>
+                </div>
+                <div class="flex items-center bg-[#F8F8F8] p-4 rounded-[43px] h-full">
+                    <img src="https://i.postimg.cc/gjkbth3b/Frame-3.png" alt="Frame3" class="w-[60px] h-[60px]" />
+                    <p class="text-black-700 font-light text-[15px] sm:text-[17px] ml-3">Verified Health Care
+                        Professionals</p>
+                    <span class="ml-auto text-black text-[15px] sm:text-[18px] font-medium" id="counter3">0</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Body Section 2   -->
+        <div class="mt-[150px]">
+            <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                    <iframe class="w-full rounded-[40px] mt-1" height="332"
+                        src="https://www.youtube.com/embed/hN_InEusu9k?si=t1etexW9RJ-gVk41" allowfullscreen>
+                    </iframe>
+                </div>
+                <div>
+                    <h2 class="text-2xl md:text-[30px] font-normal text-[#004A86]">
+                        What is ABHA Card or Health ID Card?
+                    </h2>
+                    <p class="mt-2 text-lg text-[#5A5A5A] leading-relaxed">
+                        The ABHA Health Card is a digital health ID featuring a unique 14-digit number,
+                        allowing easy access to medical records. It also generates a PHR address, functioning
+                        as a secure login for the Health Information Exchange.
+                    </p>
+                    <p class="mt-2 text-lg text-[#5A5A5A] leading-relaxed">
+                        Through the PHR app/Health Locker, users can securely store, manage, and share
+                        their medical records, ensuring seamless and cashless healthcare at authorized hospitals.
+                    </p>
+                    <button
+                        class="mt-4 bg-[#004A86] text-white px-6 md:px-12 py-3 rounded-full font-normal text-sm flex items-center gap-2">
+                        <img src="https://i.postimg.cc/3wXMK1BH/icon-1.png" alt="Create ABHA Icon" class="w-6 h-6">
+                        Create ABHA
+                    </button>
+                </div>
+            </div>
+
+            <div class="mt-24 grid md:grid-cols-2 gap-6">
+                <div class="order-2 md:order-1">
+                    <h2 class="text-2xl md:text-[30px] font-normal text-[#004A86]">
+                        How to create ABHA card or Health ID Card?
+                    </h2>
+                    <p class="text-lg text-[#5A5A5A] leading-relaxed mt-2">
+                        The process for registering an ABHA ID is quite simple. Below are the steps required
+                        to create an ABHA ID card:
+                    </p>
+                    <ul class="list-disc list-inside mt-4 text-[#5A5A5A] text-lg">
+                        <li>Visit the official ABHA website and select "Create ABHA Number."</li>
+                        <li>Choose between your Aadhaar card or driver's license and click "Next."</li>
+                        <li>Enter the selected ID number and carefully read the declaration.</li>
+                        <li>Agree to the declaration and enter the OTP sent to your registered mobile number.</li>
+                        <li>Click "Submit" to successfully generate your ABHA ID.</li>
+                    </ul>
+                </div>
+                <div class="order-1 md:order-2">
+                    <img class="w-full h-[348px] rounded-lg" src="https://i.postimg.cc/FFPMs7j1/ABHA-1.png"
+                        alt="ABHA Card Sample">
+                </div>
+            </div>
+
+            <div class="mt-24 grid md:grid-cols-2 gap-6">
+                <div>
+                    <img class="w-full rounded-lg mt-6" src="https://i.postimg.cc/ncgNBgSJ/ABHA-2.png"
+                        alt="ABHA Card Sample">
+                </div>
+                <div>
+                    <h2 class="text-2xl md:text-[30px] font-normal text-[#004A86]">
+                        Download ABHA Health Card
+                    </h2>
+                    <p class="text-lg text-[#5A5A5A] leading-relaxed mt-2">
+                        The ABHA ID simplifies access to quality healthcare, making medical services more efficient and
+                        convenient. As a key part of the Ayushman Bharat initiative, individuals can easily register
+                        online and download their digital health card for seamless healthcare management.
+                    </p>
+                    <p class="mt-2 text-lg text-[#5A5A5A] leading-relaxed">
+                        There are two ways to download your ABHA health card:
+                    </p>
+                    <ul class="list-disc list-inside mt-4 text-[#5A5A5A] text-lg">
+                        <li>
+                            <strong>ABDM Website:</strong> Visit
+                            <a href="https://abdm.gov.in" class="text-[#004A86] underline">https://abdm.gov.in</a>,
+                            log in to your ABHA account, and download your digital health card.
+                        </li>
+                        <li>
+                            <strong>Using the ABHA Mobile App:</strong> Download the app from the Play Store
+                            (for Android users), sign in to your account, and access your ABHA card instantly.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Body section 3         -->
+        <div class="mt-[150px]">
+            <h1 class="text-[#004A86] font-bold text-3xl md:text-[38px] text-center sm:text-start">What are the benefits
+                of ABHA health card?</h1>
+            <p class="font-normal text-lg mt-4 text-gray-500 text-center sm:text-start">
+                Creating ABHA is the first step towards creating safer and efficient digital health records for you and
+                your family. It provides you with:
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-10">
+                <div
+                    class="bg-white p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105">
+                    <span class="text-2xl">
+                        <img src="https://i.postimg.cc/Xv7hbWp9/Frame-4.png" alt="note" />
+                    </span>
+                    <h2 class="font-medium text-lg mt-2">Digital Health Records</h2>
+                    <p class="font-normal text-base mt-2 text-gray-500">
+                        Seamlessly access your medical information from admission to discharge without the need for
+                        paperwork.
+                    </p>
+                </div>
+
+                <div
+                    class="bg-white p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105">
+                    <span class="text-2xl">
+                        <img src="https://i.postimg.cc/L68ZL0YN/Frame-5.png" alt="tick" />
+                    </span>
+                    <h2 class="font-medium text-lg mt-2">Voluntary Opt-In</h2>
+                    <p class="font-normal text-base mt-2 text-gray-500">
+                        Enroll in ABHA at your discretion and create your digital health ID voluntarily.
+                    </p>
+                </div>
+
+                <div
+                    class="bg-white p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105">
+                    <span class="text-2xl">
+                        <img src="https://i.postimg.cc/j5hLJzRp/Frame-6.png" alt="folder" />
+                    </span>
+                    <h2 class="font-medium text-lg mt-2">Personal Health Records (PHR)</h2>
+                    <p class="font-normal text-base mt-2 text-gray-500">
+                        Connect your ABHA ID to your Personal Health Records (PHR) for a seamless and comprehensive
+                        health history.
+                    </p>
+                </div>
+
+                <div
+                    class="bg-white p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105">
+                    <span class="text-2xl">
+                        <img src="https://i.postimg.cc/L8Z5VdHB/Frame-7.png" alt="access" />
+                    </span>
+                    <h2 class="font-medium text-lg mt-2">Consent Based Access</h2>
+                    <p class="font-normal text-base mt-2 text-gray-500">
+                        Your health data is accessible only with your explicit consent, giving you full control to
+                        manage or revoke access as needed.
+                    </p>
+                </div>
+                <div
+                    class="bg-white p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105">
+                    <span class="text-2xl">
+                        <img src="https://i.postimg.cc/sgRdbbYJ/Frame-8.png" alt="key" />
+                    </span>
+                    <h2 class="font-medium text-lg mt-2">Secure and Private</h2>
+                    <p class="font-normal text-base mt-2 text-gray-500">
+                        Secured with encryption, your data remains private and is shared only with your consent.
+                    </p>
+                </div>
+
+                <div
+                    class="bg-white p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105">
+                    <span class="text-2xl">
+                        <img src="https://i.postimg.cc/mgNf4VVW/Frame-9.png" alt="secure" />
+                    </span>
+                    <h2 class="font-medium text-lg mt-2">Inclusive Access</h2>
+                    <p class="font-normal text-base mt-2 text-gray-500">
+                        Accessible to everyone, whether using a smartphone, feature phone, or through assisted services
+                        for those without a phone.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Body section 4         -->
+        <div class="mt-[150px]">
+            <h2 class="font-bold text-3xl md:text-[38px] text-blue-900 mb-4">
+                Frequently Asked Questions (FAQs)
+            </h2>
+            <p class="text-[18px] font-normal text-gray-600 mb-4 mt-3" style="word-spacing: 5px;">Got questions? We’ve
+                got answers!</p>
+
+            <div class="space-y-10">
+                <div class=" border-b pb-2 border-[#f7f7f8]">
+                    <button
+                        class="w-full text-left font-medium text-[18px] text-[#101828] flex justify-between items-center cursor-pointer "
+                        onclick="toggleFAQ(1)">
+                        What is ABHA ID?
+                        <span id="icon-1"><img src="https://i.postimg.cc/MZ3zrWp2/Icon-3.png" alt="icon3" /></span>
+                    </button>
+                    <p id="answer-1" class="text-gray-600 mt-2 font-normal text-[16px]" style="word-spacing: 2px;">ABHA
+                        ID
+                        or ABHA Card is a unique identity for your health that facilitates you a health locker to
+                        receive,
+                        store & share medical records from health service providers with your consent.</p>
+                </div>
+
+                <div class="border-b pb-2 border-[#f7f7f8] ">
+                    <button
+                        class="w-full text-left font-medium text-[18px] text-[#101828] flex justify-between items-center cursor-pointer "
+                        onclick="toggleFAQ(2)">
+                        What is the Full form of PHR?
+                        <span id="icon-2"><img src="https://i.postimg.cc/d0csm4th/Icon-2.png" alt="icon2" /></span>
+                    </button>
+                    <p id="answer-2" class="hidden text-gray-600 mt-2 font-normal text-[16px]"
+                        style="word-spacing: 2px;">
+                        PHR stands for Personal Health Record.</p>
+                </div>
+
+                <div class="border-b pb-2 border-[#f7f7f8] ">
+                    <button
+                        class="w-full text-left font-medium text-[18px] text-[#101828] flex justify-between items-center cursor-pointer "
+                        onclick="toggleFAQ(3)">
+                        What is a national health card?
+                        <span id="icon-3"><img src="https://i.postimg.cc/d0csm4th/Icon-2.png" alt="icon2" /></span>
+                    </button>
+                    <p id="answer-3" class="hidden text-gray-600 mt-2 font-normal text-[16px]"
+                        style="word-spacing: 2px;">A
+                        national health card is a digital card that provides access to healthcare services and medical
+                        records.</p>
+                </div>
+                <div class="border-b pb-2 border-[#f7f7f8]">
+                    <button
+                        class="w-full text-left font-medium text-[18px] text-[#101828] flex justify-between items-center cursor-pointer "
+                        onclick="toggleFAQ(4)">
+                        What Is Health ID?
+                        <span id="icon-4"><img src="https://i.postimg.cc/d0csm4th/Icon-2.png" alt="+" /></span>
+                    </button>
+                    <p id="answer-4" class="hidden text-gray-600 mt-2 font-normal text-[16px]">A Health ID (also known
+                        as ABHA - Ayushman Bharat Health Account) is a unique identification number introduced by the
+                        Government of India under the Ayushman Bharat Digital Mission (ABDM).</p>
+                </div>
+
+                <div class="border-b pb-2 border-[#f7f7f8]">
+                    <button
+                        class="w-full text-left font-medium text-[18px] text-[#101828] flex justify-between items-center cursor-pointer "
+                        onclick="toggleFAQ(5)">
+                        What is a digital health ID?
+                        <span id="icon-5"><img src="https://i.postimg.cc/d0csm4th/Icon-2.png" alt="+" /></span>
+                    </button>
+                    <p id="answer-5" class="hidden text-gray-600 mt-2 font-normal text-[16px]">A Digital Health ID (now
+                        known as ABHA – Ayushman Bharat Health Account) is a unique 14-digit identification number
+                        introduced under the Ayushman Bharat Digital Mission (ABDM) by the Government of India.</p>
+                </div>
+
+                <div class="border-b pb-2 border-[#f7f7f8]">
+                    <button
+                        class="w-full text-left font-medium text-[18px] text-[#101828] flex justify-between items-center cursor-pointer" 
+                        onclick="toggleFAQ(6)">
+                        What is ABHA address in the health card?
+                        <span id="icon-6"><img src="https://i.postimg.cc/d0csm4th/Icon-2.png" alt="+" /></span>
+                    </button>
+                    <p id="answer-6" class="hidden text-gray-600 mt-2 font-normal text-[16px]">An ABHA Address (Ayushman
+                        Bharat Health Account Address) is a self-declared username (similar to an email ID) used to
+                        securely access and share health records under the Ayushman Bharat Digital Mission (ABDM).</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer section          -->
+    <footer class="bg-[#004A86] text-white mt-[150px]">
+        <div class="relative py-4 px-4 md:px-20">
+            <div class="mt-[110px] max-w-6xl mx-auto text-center md:text-left">
+                <h2 class="text-3xl md:text-[46px] font-bold">Stay Informed</h2>
+                <div class="flex flex-col md:flex-row items-center gap-6 mt-6">
+                    <p class="text-lg md:text-xl font-normal text-center md:text-left">
+                        Sign up today to stay updated with the latest news, updates, and exciting developments about
+                        HOLO!
+                    </p>
+                    <div class="w-full md:w-auto flex justify-center">
+                        <div
+                            class="relative flex items-center bg-[#004A86] border-2 border-white rounded-full w-full md:w-[334px] p-1 py-3">
+                            <input type="email" placeholder="Enter your email"
+                                class="text-white placeholder-white bg-transparent px-4 pr-20 flex-grow outline-none"
+                                aria-label="Email">
+                            <button
+                                class="absolute right-[-1px] bg-white text-[#004A86] px-6 py-3 rounded-full font-semibold">
+                                Subscribe
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-6 gap-8 mt-16 text-sm text-center md:text-left">
+                    <div>
+                        <h3 class="font-bold text-lg">Cowin</h3>
+                        <ul class="mt-4 space-y-2 text-gray-300">
+                            <li>Book vaccination slot</li>
+                            <li>Download certificate</li>
+                            <li>Change mobile number</li>
+                            <li>Add passport details</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg">Products</h3>
+                        <ul class="mt-4 space-y-2 text-gray-300">
+                            <li>For doctors</li>
+                            <li>For patients</li>
+                            <li>GMB for doctors</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg">Specialities</h3>
+                        <ul class="mt-4 space-y-2 text-gray-300">
+                            <li>EMR for neurologists</li>
+                            <li>EMR for dentists</li>
+                            <li>EMR for pediatricians</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg">About</h3>
+                        <ul class="mt-4 space-y-2 text-gray-300">
+                            <li>Home</li>
+                            <li>API disclosure</li>
+                            <li>Team</li>
+                            <li>Careers</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg">Privacy & Security</h3>
+                        <ul class="mt-4 space-y-2 text-gray-300">
+                            <li>Terms and conditions</li>
+                            <li>Privacy policy</li>
+                            <li>Security</li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col items-center md:items-start">
+                        <img src="https://i.postimg.cc/nVwWfNJD/HOLO-2.png" alt="Holo2 Logo" class="w-28 mt-2" />
+                        <div class="flex space-x-5 mt-4">
+                            <img src="https://i.postimg.cc/xd05zPQQ/Link-1.png" alt="Facebook"
+                                class="w-6 h-6 cursor-pointer" />
+                            <img src="https://i.postimg.cc/B6zBR9KZ/Link-2.png" alt="Twitter"
+                                class="w-6 h-6 cursor-pointer" />
+                            <img src="https://i.postimg.cc/K4SrvPfd/Link-3.png" alt="Instagram"
+                                class="w-6 h-6 cursor-pointer" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="relative w-full h-56 bg-no-repeat bg-bottom bg-cover bottom-[64px]"
+            style="background-image: url('https://i.postimg.cc/rwmPfY9f/Clip-path-group.png');">
+        </div>
+    </footer>
+
+</body>
+
+</html>

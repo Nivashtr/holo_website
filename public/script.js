@@ -3,17 +3,18 @@ document.addEventListener('DOMContentLoaded', function() {
     const mobileMenu = document.getElementById('mobileMenu');
     const closeMenu = document.getElementById('closeMenu');
     
-    // Open menu
     menuToggle.addEventListener('click', function() {
       mobileMenu.classList.add('active');
-      document.body.style.overflow = 'hidden'; // Prevent background scrolling
+      document.body.style.overflow = 'hidden';
     });
     
-    // Close menu
+
     closeMenu.addEventListener('click', function() {
       mobileMenu.classList.remove('active');
-      document.body.style.overflow = ''; // Restore scrolling
+      document.body.style.overflow = ''; 
     });
+
+
   });
 
   //ABHD PAGE SCRIPT

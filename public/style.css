@@ -52,9 +52,6 @@ nav ul li a:not(.noHover):hover::after {
 .heroImgContainer{
     display: block;
 }
-.heroContextContainer{
-    
-}
 
 /* Mobile (Default: Below 640px) */
 @media (max-width: 639px) {

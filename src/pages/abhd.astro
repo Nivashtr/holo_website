@@ -5,67 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
     <title>ABHA PAGE</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
-	<link rel="stylesheet" href="/solutionStyle.css">
-    <script src="/solutionScript.js" defer></script>
+    <script src="/script.js" defer></script>
 </head>
-
+<style>
+body{
+    font-family: "Outfit", sans-serif;
+}
+ </style>   
 <body>
     <!-- Container Section 1   -->
     <!-- Header Section    -->
-    <div class="">
-        <div class="flex items-center justify-between h-[100px] px-4 md:px-8 lg:px-16 py-6 md:py-10">
-            <div class="logo">
-              <img src="https://i.postimg.cc/pdx8G8Tv/HOLO.png" width="100" height="23.14" alt="HOLO Logo">
+    <div class="container mx-auto p-9 max-w-[1175px]">
+        <header class="relative">
+            <div class="header flex items-center justify-between relative">
+                <img src="https://i.postimg.cc/zv5Gz3Wx/HOLO.png" alt="holo" class="h-5">
+                <button id="menu-btn" class="md:hidden text-[#004A86] text-2xl focus:outline-none"
+                    aria-expanded="false">
+                    &#9776;
+                </button>
+
+                <ul class="hidden md:flex space-x-16 text-[15px] text-[#004A86] ">
+                    <li class="cursor-pointer relative hover:text-blue-700 transition-all duration-300 ease-in-out 
+                      after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-blue-700 after:transition-all after:duration-300 after:ease-in-out 
+                       hover:after:w-full">
+                       <a href="/">Home</a> 
+                    </li>
+                    <li class="cursor-pointer relative hover:text-blue-700 transition-all duration-300 ease-in-out 
+                      after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-blue-700 after:transition-all after:duration-300 after:ease-in-out 
+                       hover:after:w-full">
+                       <a href="/solution">Solution</a> 
+                    </li>
+                    <li class="cursor-pointer relative">
+                        <div class="flex items-center space-x-2">
+                            <a href="/abdm"><span>ABDM</span></a>
+                            <img src="https://i.postimg.cc/28Yxfd5n/down-Arrow.png" alt="Arrow"
+                                class="w-[10px] h-auto" />
+                        </div>
+                    </li> 
+                    <!-- <li class="cursor-pointer relative hover:text-blue-700 transition-all duration-300 ease-in-out 
+                      after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-blue-700 after:transition-all after:duration-300 after:ease-in-out 
+                       hover:after:w-full">
+                        Hub
+                    </li> -->
+                </ul>
             </div>
-            <nav>
-              <button id="menuToggle" class="text-[#004A86] lg:hidden z-50 relative">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                </svg>
-              </button>
-              <ul class="hidden lg:flex text-[#004A86] items-center">
-                <li class="pl-8"><a class="px-0 py-2 hover:bg-transparent" href="/">Home</a></li>
-                <li class="pl-8"><a class="px-0 py-2 hover:bg-transparent" href="/solution">Solution</a></li>
-                <li class="pl-8">
-                  <a href="/abhd" class="flex items-center px-0 py-2 noHover">
-                    ABDM <i class="ti ti-chevron-down ml-2 text-m"></i>
-                  </a>
-                </li>
-                <li class="pl-8"><a class="px-0 py-2 hover:bg-transparent" href="#">Hub</a></li>
-              </ul>
-            </nav>
-          </div>
-          
-          <!-- Mobile Menu Overlay -->
-          <div id="mobileMenu" class="mobile-menu fixed inset-0 bg-[#022F53] bg-opacity-95 flex items-center justify-center z-40 h-screen w-screen">
-            <div class="relative w-full">
-              <!-- Close button -->
-              <button id="closeMenu" class="absolute top-6 right-6 text-white">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
-              
-              <!-- Centered Menu Items -->
-              <ul class="text-white text-center">
-                <li class="py-4"><a href="/" class="block text-xl">Home</a></li>
-                <li class="py-4"><a href="/solution" class="block text-xl">Solution</a></li>
-                <li class="py-4">
-                  <a href="/abhd" class="inline-flex items-center text-xl ">ABDM <i class="fa fa-chevron-down ml-2"></i></a>
-                </li>
-                <li class="py-4"><a href="#" class="block text-xl">Hub</a></li>
-              </ul>
-            </div>
-          </div>
- 
+            <ul id="mobile-menu"
+                class="hidden absolute top-full left-0 w-full flex-col space-y-7 text-[16px] text-[#004A86] bg-white shadow-md p-4 rounded-lg z-50">
+                <li class="cursor-pointer hover:text-blue-700"><a href="/">Home</a></li>
+                <li class="cursor-pointer hover:text-blue-700"><a href="/solution">Solution</a></li>
+                <!-- <li class="cursor-pointer hover:text-blue-700"><a href="/abdm"><span>ABDM</span></a></li> -->
+                <!-- <li class="cursor-pointer hover:text-blue-700">Hub</li> -->
+            </ul>
+        </header>
 
         <!-- head section 2         -->
-        <div class="mt-[50px] flex flex-col lg:flex-row justify-between items-start space-x-0 lg:space-x-5 px-16">
+        <div class="mt-[50px] flex flex-col lg:flex-row justify-between items-start space-x-0 lg:space-x-5 ">
             <div class="w-full lg:w-1/2">
-                <h2 class="text-[#004A86] text-[40px] font-bold">ABHA</h2>
-                <h3 class="text-[#004A86] font-normal mt-3 text-[30px] sm:text-[34px]">
+                <h2 class="text-[#004A86] text-[30px] font-bold">ABHA</h2>
+                <h3 class="text-[#004A86] font-normal mt-3 text-[30px] sm:text-[30px]">
                     Ayushman Bharat Health Account or Health ID Card. Approved by NDHM.GOV.IN
                 </h3>
                 <p class="text-[#5A5A5A] text-[16px] md:text-[18px] font-normal leading-7 md:leading-8 mt-2">
@@ -80,9 +79,9 @@
             </div>
             <div
                 class="w-full lg:w-1/2 text-right border border-[#C8C8C8] rounded-[20px] md:rounded-[32px] p-4 md:p-5 mt-6 lg:mt-0">
-                <p class="text-[#000000] text-[22px] md:text-[27px] font-medium text-center">
+                <p class="text-[#000000] text-[22px] md:text-[25px] font-medium text-center">
                     Create Ayushman Bharat Health Account
-                    <span class="text-[#004A86] text-[22px] md:text-[27px] font-medium">ABHA (Health ID) Card</span>
+                    <span class="text-[#004A86] text-[22px] md:text-[25px] font-medium">ABHA (Health ID) Card</span>
                 </p>
 
                 <div class="flex bg-gray-200 p-1 rounded-full w-full h-12 md:h-14 mx-auto relative mt-6 md:mt-[28px]">
@@ -101,11 +100,13 @@
                 <div class="flex items-center justify-between w-full h-12 md:h-14 px-4 py-2 border border-gray-300 rounded-full shadow-sm bg-white mt-6 md:mt-7">
                     <input id="aadharInput" type="text" inputmode="numeric" pattern="[0-9]*"
                         placeholder="xxxx | xxxx | xxxx"
-                        class="text-[#505050] tracking-[4px] md:tracking-[8px] font-normal text-sm md:text-base text-center md:text-start md:ml-28 w-full outline-none transition-all" />
-                    
+                        class="text-[#505050] tracking-[4px]  sm:tracking-[4px] md:tracking-[32px] lg:tracking-[14px] xl:tracking-[12px] 
+                        font-normal text-sm md:text-base text-center md:text-start md:ml-14 w-full outline-none transition-all" />
+
                     <input id="mobileInput" type="text" inputmode="numeric" pattern="[0-9]*"
                         placeholder="+91 | xxxxx xxxxx"
-                        class="text-[#505050] tracking-[4px] md:tracking-[8px] font-normal text-sm md:text-base text-center md:text-start md:ml-28 w-full hidden outline-none focus:block transition-all" />
+                        class="text-[#505050] tracking-[4px] lg:tracking-[12px] md:tracking-[23px] font-normal text-sm md:text-base text-center md:text-start 
+                        md:ml-14 w-full hidden outline-none focus:block transition-all" />
                 </div>
                 
                 <div class="mx-auto p-4 md:p-6 bg-white mt-6 md:mt-[28px]">
@@ -154,7 +155,7 @@
         <div class="flex items-center space-x-2">
             <span class="bg-red-600 text-white px-5 py-2 rounded-full text-sm font-medium"> ● Live</span>
         </div>
-        <h2 class="text-[#004A86] text-[26px] font-normal sm:text-[38px] mt-3">
+        <h2 class="text-[#004A86] text-[26px] font-normal sm:text-[35px] mt-3">
             The cumulative number of ABHA created & registered across states and union territories in India as per Govt.
             of India @healthid.ndhm.gov.in
         </h2>
@@ -194,32 +195,32 @@
                 <div class="flex items-center bg-[#F8F8F8] p-4 rounded-[43px] h-full">
                     <img src="https://i.postimg.cc/0NDvzP9F/Frame-1.png" alt="Frame1" class="w-[60px] h-[60px]" />
                     <p class="text-black-700 font-light text-[15px] sm:text-[17px] ml-3">ABHA created</p>
-                    <span class="ml-auto text-black text-[15px] sm:text-[18px] font-medium" id="counter">0</span>
+                    <span class="ml-auto text-black text-[15px] sm:text-[18px] font-medium" id="counter">76,02,433</span>
                 </div>
                 <div class="flex items-center bg-[#F8F8F8] p-4 rounded-[43px] h-full">
                     <img src="https://i.postimg.cc/nzxJ7gzz/Frame-2.png" alt="Frame2" class="w-[60px] h-[60px]" />
                     <p class="text-black-700 font-light text-[15px] sm:text-[17px] ml-3">Verified Facilities On HFR</p>
-                    <span class="ml-auto text-black text-[15px] sm:text-[18px] font-medium" id="counter2">0</span>
+                    <span class="ml-auto text-black text-[15px] sm:text-[18px] font-medium" id="counter2">3,05,875</span>
                 </div>
                 <div class="flex items-center bg-[#F8F8F8] p-4 rounded-[43px] h-full">
                     <img src="https://i.postimg.cc/gjkbth3b/Frame-3.png" alt="Frame3" class="w-[60px] h-[60px]" />
                     <p class="text-black-700 font-light text-[15px] sm:text-[17px] ml-3">Verified Health Care
                         Professionals</p>
-                    <span class="ml-auto text-black text-[15px] sm:text-[18px] font-medium" id="counter3">0</span>
+                    <span class="ml-auto text-black text-[15px] sm:text-[18px] font-medium" id="counter3">6,52,848</span>
                 </div>
             </div>
         </div>
 
         <!-- Body Section 2   -->
         <div class="mt-[150px]">
-            <div class="grid md:grid-cols-2 gap-6">
+            <div class="grid lg:grid-cols-2 gap-6">
                 <div>
-                    <iframe class="w-full rounded-[40px] mt-1" height="332"
+                    <iframe class="w-full rounded-[40px] mt-1" height="328"
                         src="https://www.youtube.com/embed/hN_InEusu9k?si=t1etexW9RJ-gVk41" allowfullscreen>
                     </iframe>
                 </div>
                 <div>
-                    <h2 class="text-2xl md:text-[30px] font-normal text-[#004A86]">
+                    <h2 class="text-2xl md:text-[28px] font-normal text-[#004A86]">
                         What is ABHA Card or Health ID Card?
                     </h2>
                     <p class="mt-2 text-lg text-[#5A5A5A] leading-relaxed">
@@ -239,9 +240,9 @@
                 </div>
             </div>
 
-            <div class="mt-24 grid md:grid-cols-2 gap-6">
+            <div class="mt-24 grid lg:grid-cols-2 gap-6">
                 <div class="order-2 md:order-1">
-                    <h2 class="text-2xl md:text-[30px] font-normal text-[#004A86]">
+                    <h2 class="text-2xl md:text-[28px] font-normal text-[#004A86]">
                         How to create ABHA card or Health ID Card?
                     </h2>
                     <p class="text-lg text-[#5A5A5A] leading-relaxed mt-2">
@@ -262,13 +263,13 @@
                 </div>
             </div>
 
-            <div class="mt-24 grid md:grid-cols-2 gap-6">
+            <div class="mt-24 grid lg:grid-cols-2 gap-6">
                 <div>
                     <img class="w-full rounded-lg mt-6" src="https://i.postimg.cc/ncgNBgSJ/ABHA-2.png"
                         alt="ABHA Card Sample">
                 </div>
                 <div>
-                    <h2 class="text-2xl md:text-[30px] font-normal text-[#004A86]">
+                    <h2 class="text-2xl md:text-[28px] font-normal text-[#004A86]">
                         Download ABHA Health Card
                     </h2>
                     <p class="text-lg text-[#5A5A5A] leading-relaxed mt-2">
@@ -296,7 +297,7 @@
 
         <!-- Body section 3         -->
         <div class="mt-[150px]">
-            <h1 class="text-[#004A86] font-bold text-3xl md:text-[38px] text-center sm:text-start">What are the benefits
+            <h1 class="text-[#004A86] font-bold text-3xl md:text-[32px] text-center sm:text-start">What are the benefits
                 of ABHA health card?</h1>
             <p class="font-normal text-lg mt-4 text-gray-500 text-center sm:text-start">
                 Creating ABHA is the first step towards creating safer and efficient digital health records for you and
@@ -305,9 +306,9 @@
 
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-10">
                 <div
-                    class="bg-white p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105">
+                    class="bg-[#F3FBFF] p-6 rounded-[40px] ">
                     <span class="text-2xl">
-                        <img src="https://i.postimg.cc/Xv7hbWp9/Frame-4.png" alt="note" />
+                        <i data-lucide="clipboard-list" class="w-[34px] h-[34px] text-[#004A86]"></i>
                     </span>
                     <h2 class="font-medium text-lg mt-2">Digital Health Records</h2>
                     <p class="font-normal text-base mt-2 text-gray-500">
@@ -317,9 +318,9 @@
                 </div>
 
                 <div
-                    class="bg-white p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105">
+                    class="bg-[#F3FBFF] p-6 rounded-[40px]">
                     <span class="text-2xl">
-                        <img src="https://i.postimg.cc/L68ZL0YN/Frame-5.png" alt="tick" />
+                        <i data-lucide="check" class="w-[34px] h-[34px] text-[#004A86]"></i>
                     </span>
                     <h2 class="font-medium text-lg mt-2">Voluntary Opt-In</h2>
                     <p class="font-normal text-base mt-2 text-gray-500">
@@ -328,9 +329,9 @@
                 </div>
 
                 <div
-                    class="bg-white p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105">
+                    class="bg-[#F3FBFF] p-6 rounded-[40px]">
                     <span class="text-2xl">
-                        <img src="https://i.postimg.cc/j5hLJzRp/Frame-6.png" alt="folder" />
+                        <i data-lucide="folder" class="w-[34px] h-[34px] text-[#004A86]"></i>
                     </span>
                     <h2 class="font-medium text-lg mt-2">Personal Health Records (PHR)</h2>
                     <p class="font-normal text-base mt-2 text-gray-500">
@@ -340,9 +341,9 @@
                 </div>
 
                 <div
-                    class="bg-white p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105">
+                    class="bg-[#F3FBFF] p-6 rounded-[40px]">
                     <span class="text-2xl">
-                        <img src="https://i.postimg.cc/L8Z5VdHB/Frame-7.png" alt="access" />
+                        <i data-lucide="accessibility" class="w-[34px] h-[34px] text-[#004A86]"></i>
                     </span>
                     <h2 class="font-medium text-lg mt-2">Consent Based Access</h2>
                     <p class="font-normal text-base mt-2 text-gray-500">
@@ -351,9 +352,9 @@
                     </p>
                 </div>
                 <div
-                    class="bg-white p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105">
+                    class="bg-[#F3FBFF] p-6 rounded-[40px]">
                     <span class="text-2xl">
-                        <img src="https://i.postimg.cc/sgRdbbYJ/Frame-8.png" alt="key" />
+                        <i data-lucide="key" class="w-[34px] h-[34px] text-[#004A86]"></i>
                     </span>
                     <h2 class="font-medium text-lg mt-2">Secure and Private</h2>
                     <p class="font-normal text-base mt-2 text-gray-500">
@@ -362,9 +363,9 @@
                 </div>
 
                 <div
-                    class="bg-white p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105">
+                    class="bg-[#F3FBFF] p-6 rounded-[40px] ">
                     <span class="text-2xl">
-                        <img src="https://i.postimg.cc/mgNf4VVW/Frame-9.png" alt="secure" />
+                        <i data-lucide="lock" class="w-[34px] h-[34px] text-[#004A86]"></i>
                     </span>
                     <h2 class="font-medium text-lg mt-2">Inclusive Access</h2>
                     <p class="font-normal text-base mt-2 text-gray-500">
@@ -377,7 +378,7 @@
 
         <!-- Body section 4         -->
         <div class="mt-[150px]">
-            <h2 class="font-bold text-3xl md:text-[38px] text-blue-900 mb-4">
+            <h2 class="font-bold text-3xl md:text-[32px] text-blue-900 mb-4">
                 Frequently Asked Questions (FAQs)
             </h2>
             <p class="text-[18px] font-normal text-gray-600 mb-4 mt-3" style="word-spacing: 5px;">Got questions? We’ve
@@ -448,7 +449,7 @@
 
                 <div class="border-b pb-2 border-[#f7f7f8]">
                     <button
-                        class="w-full text-left font-medium text-[18px] text-[#101828] flex justify-between items-center cursor-pointer" 
+                        class="w-full text-left font-medium text-[18px] text-[#101828] flex justify-between items-center cursor-pointer "
                         onclick="toggleFAQ(6)">
                         What is ABHA address in the health card?
                         <span id="icon-6"><img src="https://i.postimg.cc/d0csm4th/Icon-2.png" alt="+" /></span>
@@ -456,6 +457,7 @@
                     <p id="answer-6" class="hidden text-gray-600 mt-2 font-normal text-[16px]">An ABHA Address (Ayushman
                         Bharat Health Account Address) is a self-declared username (similar to an email ID) used to
                         securely access and share health records under the Ayushman Bharat Digital Mission (ABDM).</p>
+
                 </div>
             </div>
         </div>
@@ -542,10 +544,7 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="relative w-full h-56 bg-no-repeat bg-bottom bg-cover bottom-[64px]"
-            style="background-image: url('https://i.postimg.cc/rwmPfY9f/Clip-path-group.png');">
-        </div> -->
-        <div class="relative w-full h-[10vh]  bg-center object-cover bg-no-repeat"
+        <div class="relative w-full h-56 bg-no-repeat bg-bottom bg-cover bottom-[64px]"
             style="background-image: url('https://i.postimg.cc/rwmPfY9f/Clip-path-group.png');">
         </div>
     </footer>

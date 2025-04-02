@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>ABDM PAGE</title>
+    <script src="/script.js" defer></script>
+</head>
+<style>
+body{
+    font-family: "Outfit", sans-serif;
+}
+</style>   
+<!-- <body class="bg-[#dce9f6]"> -->
+<body>
+ <!-- Container Section 1   -->
+<!-- Header Section    -->
+<div class="container mx-auto p-9 max-w-[1175px]">
+        <header class="relative">
+            <div class="header flex items-center justify-between relative">
+                <img src="https://i.postimg.cc/zv5Gz3Wx/HOLO.png" alt="holo" class="h-5">
+                <button id="menu-btn" class="md:hidden text-[#004A86] text-2xl focus:outline-none"
+                    aria-expanded="false">
+                    &#9776;
+                </button>
+
+                <ul class="hidden md:flex space-x-16 text-[15px] text-[#004A86] ">
+                    <li class="cursor-pointer relative hover:text-blue-700 transition-all duration-300 ease-in-out 
+                      after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-blue-700 after:transition-all after:duration-300 after:ease-in-out 
+                       hover:after:w-full">
+                       <a href="/">Home</a> 
+                    </li>
+                    <li class="cursor-pointer relative hover:text-blue-700 transition-all duration-300 ease-in-out 
+                      after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-blue-700 after:transition-all after:duration-300 after:ease-in-out 
+                       hover:after:w-full">
+                       <a href="/solution">Solution</a> 
+                    </li>
+                    <li class="cursor-pointer relative">
+                        <div class="flex items-center space-x-2">
+                            <a href="/abdm"><span>ABDM</span></a>
+                            <img src="https://i.postimg.cc/28Yxfd5n/down-Arrow.png" alt="Arrow"
+                                class="w-[10px] h-auto" />
+                        </div>
+                    </li>
+                    <!-- <li class="cursor-pointer relative hover:text-blue-700 transition-all duration-300 ease-in-out 
+                      after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-blue-700 after:transition-all after:duration-300 after:ease-in-out 
+                       hover:after:w-full">
+                        Hub
+                    </li> -->
+                </ul>
+            </div>
+            <ul id="mobile-menu"
+                class="hidden absolute top-full left-0 w-full flex-col space-y-7 text-[16px] text-[#004A86] bg-white shadow-md p-4 rounded-lg z-50">
+                <li class="cursor-pointer hover:text-blue-700"><a href="/">Home</a></li>
+                <li class="cursor-pointer hover:text-blue-700"><a href="/solution">Solution</a></li>
+                <li class="cursor-pointer hover:text-blue-700"><a href="/abdm"><span>ABDM</span></a></li>
+                <!-- <li class="cursor-pointer hover:text-blue-700">Hub</li> -->
+            </ul>
+        </header>
+      
+     <!-- head section 2         -->    
+        <div class="md:p-5 flex flex-col lg:flex-row justify-center md:justify-between items-center gap-10 md:gap-28 mt-[50px]">
+            <img src="https://i.postimg.cc/L654FmYK/Group.png" alt="ABDM Logo" class="w-60 md:w-80 lg:w-96">
+            <div class="text-center lg:text-left">
+                <h1 class="text-2xl md:text-[36px] font-bold text-blue-900">
+                    Ayushman Bharat Digital Mission (ABDM)
+                </h1>
+                <p class="text-gray-600 mt-2 text-lg md:text-[17px] font-normal">
+                    Laying the groundwork for a unified and efficient digital health infrastructure in India.
+                </p>
+                
+                <button class="mt-4 bg-[#004A86] text-white px-6 md:px-12 py-3 rounded-full font-normal text-sm flex items-center gap-2 cursor-pointer mx-auto lg:mx-0">
+                    <img src="https://i.postimg.cc/3wXMK1BH/icon-1.png" alt="Create ABHA Icon" class="w-6 h-6">
+                    Create ABHA
+                </button>
+            </div>
+        </div>
+
+<!-- Body section 1   -->   
+    <div class="mt-[150px]">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div class="relative">
+                    <img class="w-full rounded-lg mt-6" src="https://i.postimg.cc/rpkLsTmp/Mask-group.png" alt="ABHA Card Sample">
+                    <img class="absolute top-8 right-2 w-20 h-20 md:w-23 md:h-23 md:top-8 md:right-12 rounded-lg mt-2 mr-2" src="https://i.postimg.cc/wMHCxQTb/abdm.png" alt="ABHA Card Sample">
+                </div>                
+                <div>
+                    <h2 class="text-2xl md:text-[28px] font-normal text-[#004A86]">
+                        About Ayushman Bharat Digital Mission
+                    </h2>
+                    <p class="mt-2 text-lg text-[#5A5A5A] leading-relaxed">
+                        Launched on 27th September 2021, the Ayushman Bharat Digital Mission (ABDM) aims to enhance healthcare accessibility and equity through digital innovation. By leveraging IT, it supports existing health systems with a citizen-centric approach. ABDM envisions a unified digital health ecosystem that ensures efficient, inclusive, affordable, and secure healthcare for all. The mission improves efficiency, transparency, and accessibility, allowing individuals to choose between public and private services, while healthcare professionals gain better access to patient records for improved care.
+                    </p>
+                </div>
+            </div>
+        
+            <div class="mt-24 grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div class="order-2 md:order-1">
+                    <h2 class="text-2xl md:text-[28px] font-normal text-[#004A86]">
+                        Health ID
+                    </h2>
+                    <p class="text-lg text-[#5A5A5A] leading-relaxed mt-2">
+                        Under the mission, individuals are suggested to create health IDs to standardize the process of identification across healthcare providers. To issue UHID (Universal Health ID), the system collects certain basic details of the individual, including demographic, location, family/relationship, and contact details. The Health ID will uniquely identify individuals, authenticating them, and sharing their health records (only with informed consent) with multiple healthcare systems and various stakeholders.
+                    </p>
+                    <div class="flex flex-col md:flex-row gap-4 md:gap-6 lg:gap-8 justify-center md:justify-start items-center w-full">
+                        <a href="/abhd" class="w-full sm:w-auto bg-blue-900 text-white px-6 py-3 rounded-full font-normal text-sm flex items-center justify-center gap-2 cursor-pointer">
+                            <img src="https://i.postimg.cc/3wXMK1BH/icon-1.png" alt="Create ABHA Icon" class="w-6 h-6">
+                            Create ABHA
+                        </a>
+                        <button class="w-full sm:w-auto text-blue-900 px-6 py-3 border border-blue-800 rounded-full font-normal text-sm flex items-center justify-center gap-2">
+                            ⓘ Learn more about health ID
+                        </button>
+                    </div>
+                </div>
+                <div class="order-1 md:order-2">
+                    <img class="w-full h-[348px] rounded-lg" src="https://i.postimg.cc/PxfsbM1s/Mask-group-2.png" alt="ABHA Card Sample">
+                </div>
+            </div>
+        
+            <div class="mt-24 grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div>
+                    <img class="w-full rounded-lg mt-6" src="https://i.postimg.cc/9Xn5TZMK/Mask-group-3.png" alt="ABHA Card Sample">
+                </div>
+                <div>
+                    <h2 class="text-2xl md:text-[28px] font-normal text-[#004A86]">
+                        Healthcare Professionals Registry (HPR)
+                    </h2>
+                    <p class="text-lg text-[#5A5A5A] leading-relaxed mt-2">
+                        The Healthcare Professionals Registry (HPR), a key initiative under ABDM, is a comprehensive digital repository of healthcare professionals across modern and traditional medicine in India. Enrolling in HPR enables professionals to seamlessly integrate into India’s digital health ecosystem, enhancing accessibility, efficiency, and care quality. This centralized directory ensures verified access to skilled professionals for patients and healthcare providers. HPR also improves interoperability, connecting professionals with health facilities, digital records, and government initiatives, fostering a transparent, patient-centric healthcare system.
+                    </p>
+                </div>
+            </div>
+        
+            <div class="mt-24 grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div class="order-2 md:order-1">
+                    <h2 class="text-2xl md:text-[28px] font-normal text-[#004A86]">
+                        Health Facility Registry (HFR)
+                    </h2>
+                    <p class="text-lg text-[#5A5A5A] leading-relaxed mt-2">
+                        The Health Facility Registry (HFR) is a comprehensive digital repository that includes both private and public healthcare facilities across India, such as clinics, hospitals, diagnostic labs, imaging centers, and pharmacies. By integrating with India’s Digital Health Ecosystem, HFR enhances accessibility, interoperability, and transparency in healthcare services. It empowers healthcare providers by ensuring their verified presence in the digital network, allowing patients and stakeholders to easily connect with registered facilities. This initiative aims to streamline healthcare delivery, improve efficiency, and create a more patient-centric, technology-driven system across the nation.
+                    </p>
+                </div>
+                <div class="order-1 md:order-2">
+                    <img class="w-full h-[348px] rounded-lg" src="https://i.postimg.cc/nzS54fHB/Mask-group-4.png" alt="ABHA Card Sample">
+                </div>
+            </div>
+        
+            <div class="mt-24 grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div>
+                    <img class="w-full rounded-lg mt-6" src="https://i.postimg.cc/RVH8HY2J/Mask-group-5.png" alt="ABHA Card Sample">
+                </div>
+                <div>
+                    <h2 class="text-2xl md:text-[28px] font-normal text-[#004A86]">
+                        Health Records (PHR)
+                    </h2>
+                    <p class="mt-2 text-lg text-[#5A5A5A] leading-relaxed">
+                        PHR is an electronic form of medical record(s) of an individual which conforms to nationally recognized interoperability standards. It is managed, shared, and controlled by the individual, and can be drawn from multiple sources. The most notable feature of the PHR: The information is under the control of the individual.
+                    </p>
+                    <p class="mt-2 text-lg text-[#5A5A5A] leading-relaxed">
+                        The Personal Health Record-System (PHR) will enable individuals to manage complete information about his/her healthcare. The information would include the longitudinal record, comprising of his/her health data, lab reports, discharge summaries, treatment details, across one or multiple health facilities.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+<!-- Body section 2   -->                
+<div class="mt-36 border rounded-[40px] border-blue-300 w-full px-4 md:px-8 lg:px-9 py-8 relative z-10 overflow-hidden bg-[#f1f6fc]">
+    <div class="flex flex-col md:flex-row items-center justify-between">
+        <div class="md:w-1/2 text-center md:text-left p-6 md:p-12">
+            <h2 class="text-3xl sm:text-4xl font-semibold text-blue-900">Create ABHA</h2>
+            <p class="text-gray-600 mt-3 leading-relaxed">
+                Be part of Ayushman Bharat Digital Mission (ABDM) and start your digital health journey.
+            </p>
+            <div class="mt-6 flex flex-wrap sm:flex-row gap-4 w-full">
+                <a href="/abhd" class="flex-1 min-w-[180px] bg-blue-900 text-white px-6 py-3 rounded-full font-normal text-sm flex items-center justify-center gap-2">
+                    <img src="https://i.postimg.cc/3wXMK1BH/icon-1.png" alt="Create ABHA Icon" class="w-6 h-6">
+                    Create ABHA
+                </a>
+                <button class="flex-1 min-w-[180px] text-blue-900 px-6 py-3 border border-blue-800 rounded-full font-normal text-sm flex items-center justify-center gap-2">
+                    ⓘ Learn more about health ID
+                </button>
+            </div>
+            <div class="mt-6 text-gray-700 font-medium flex flex-col sm:flex-row items-center justify-center sm:justify-around gap-2">
+                <span class="text-black text-xl sm:text-2xl font-normal">Approved By</span>
+                <img src="https://i.postimg.cc/K84vv6kh/NHA.png" alt="NHA Logo" class="h-10 sm:h-12">
+            </div>
+        </div>
+        <div class="md:w-1/2 flex justify-center mt-6 md:mt-0">
+            <img src="https://i.postimg.cc/QdZzkbr4/image.png" alt="ABHA Creation" class="w-48 sm:w-64 md:w-72 lg:w-80 max-w-full">
+        </div>
+    </div>
+    <div class="ml-[-32px] absolute w-full h-32 sm:h-40 md:h-56 bg-no-repeat bg-bottom bg-cover mt-[-120px] z-0 overflow-hidden"
+        style="background-image: url('https://i.postimg.cc/CLRmRMcs/Clip-path-group.png');">
+    </div>
+</div>
+
+
+<!-- Body section 3   -->
+<div class="mt-[150px]">
+    <h1 class="text-[#004A86] font-bold text-3xl md:text-[32px] text-center sm:text-start">The Future of Healthcare in India</h1>
+    <p class="font-normal text-lg mt-4 text-gray-500 text-center sm:text-start">
+        Ayushman Bharat Digital Mission is promising and expected to significantly improve the effectiveness, 
+        efficiency, and transparency of health service delivery overall.
+    </p>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-[60px]">
+        <div>
+            <img class="w-full rounded-lg mt-6" src="https://i.postimg.cc/R0Mb2Zhw/Mask-group-6.png" alt="ABHA Card Sample">
+        </div>
+        <div>
+            <h2 class="text-2xl md:text-[28px] font-normal text-[#004A86]">
+                Securely store and access medical records
+            </h2>
+            <p class="mt-2 text-lg text-[#5A5A5A] leading-relaxed">
+                Patients will be able to securely store and access their medical records, and they will also be able to share them with healthcare providers, ensuring appropriate treatment and follow-up. Individuals will have access to more accurate information on private as well as public health facilities and service providers. Moreover, patients can access health services remotely through tele-consultation and e-pharmacy.
+            </p>
+        </div>
+    </div>
+
+    <div class="mt-24 grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div class="order-2 md:order-1">
+            <h2 class="text-2xl md:text-[28px] font-normal text-[#004A86]">
+                Better access to patient’s medical history
+            </h2>
+            <p class="text-lg text-[#5A5A5A] leading-relaxed mt-2">
+                Healthcare professionals will have better access to patient’s medical history, providing better and more effective health solutions. ABDM will digitize the claims process and enable faster reimbursements.
+            </p>
+        </div>
+        <div class="order-1 md:order-2">
+            <img class="w-full h-[348px] rounded-lg" src="https://i.postimg.cc/gJjtktvJ/Mask-group-7.png" alt="ABHA Card Sample">
+        </div>
+    </div>
+
+    <div class="mt-24 grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div>
+            <img class="w-full rounded-lg mt-6" src="https://i.postimg.cc/bJ5CG0TR/Mask-group-8.png" alt="ABHA Card Sample">
+        </div>
+        <div>
+            <h2 class="text-2xl md:text-[28px] font-normal text-[#004A86]">
+                Better access to data to take an informed decision
+            </h2>
+            <p class="text-lg text-[#5A5A5A] leading-relaxed mt-2">
+                The ABDM will enable policymakers to have better access to data to make informed decisions. Better quality & accessibility of macro and micro-level data will enable advanced analytics, use of health biomarkers, and improved preventive healthcare. It will empower the government to monitor health based on geography and demography and design better health programs and policies.
+            </p>
+        </div>
+    </div>
+
+    <div class="mt-24 grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div class="order-2 md:order-1">
+            <h2 class="text-2xl md:text-[28px] font-normal text-[#004A86]">
+                Comprehensive feedback loop between researchers, policymakers, and providers
+            </h2>
+            <p class="text-lg text-[#5A5A5A] leading-relaxed mt-2">
+                Researchers will have access to aggregated information, enabling them to study and evaluate the effectiveness of various programs and interventions. ABDM facilitates a comprehensive feedback loop between researchers, policymakers, and providers.
+            </p>
+        </div>
+        <div class="order-1 md:order-2">
+            <img class="w-full h-[348px] rounded-lg" src="https://i.postimg.cc/qqCm2tDH/Mask-group-9.png" alt="ABHA Card Sample">
+        </div>
+    </div>
+</div>
+
+<!-- Body section 4   -->
+<div class="mt-[150px] p-6 md:p-9">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 items-center">
+        <div class="border-2 border-gray-300 shadow-lg bg-white p-6 md:p-8 rounded-[40px]">
+            <h2 class="text-2xl md:text-[26px] font-semibold text-[#004A86]">
+                Digital Health Incentive Scheme
+            </h2>
+            <p class="mt-4 text-gray-700 text-[15px] leading-relaxed">
+                Since the launch of Ayushman Bharat Digital Mission (ABDM), digital health records have grown significantly. However, many people are still using non-digital healthcare services, so there's still room to grow and completely digitize health across India.
+                In an effort to boost digital health transactions, the National Health Authority (NHA) has launched an incentive scheme called Digital Health Incentive Scheme (DHIS) for all healthcare providers contributing to the digital health ecosystem.
+                Through DHIS, doctors can play an instrumental role in the digitization of patient health records while earning up to ₹4 crores.
+                <br /><br />
+                The Digital Health Incentive Scheme also encourages makers of digital health software, like Hospital/Health Management Information Systems (HMIS) and Laboratory Management Information Systems (LMIS), to offer their software at a fair and affordable price.
+            </p>
+        </div>
+        <div class="flex justify-center md:justify-end">
+            <img src="https://i.postimg.cc/wvtKbj40/Group-2.png" alt="Digital Health Incentive Scheme Image" class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl ">
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Body section 5 [table]   -->
+<div class="mt-10 flex justify-center px-4">
+    <div class="border border-gray-300 rounded-3xl overflow-hidden w-full md:w-2/3 flex-1 h-full">
+        <div class="overflow-x-auto">
+            <table class="w-full border-collapse text-left">
+                <thead>
+                    <tr class="bg-blue-100 text-blue-800">
+                        <th class="px-4 py-2">Type of entity</th>
+                        <th class="px-4 py-2">Base level criteria</th>
+                        <th class="px-4 py-2"></th>
+                        <th class="px-4 py-2">Incentives</th>
+                    </tr>
+                </thead>
+                <tbody class="text-gray-700">
+                    <tr class="border-b border-gray-300">
+                        <td class="p-4">Hospitals/Clinics/Nursing homes</td>
+                        <td class="p-4">100 transactions per month</td>
+                        <td class="p-4"></td>
+                        <td class="p-4">&#8377;20 per additional transaction above the base level.</td>
+                    </tr>
+                    <tr class="border-b border-gray-300">
+                        <td class="p-4">Diagnostic Facilities/Labs</td>
+                        <td class="p-4">100 transactions per month</td>
+                        <td class="p-4"></td>
+                        <td class="p-4">&#8377;20 per additional transaction above the base level.</td>
+                    </tr>
+                    <tr class="border-b border-gray-300">
+                        <td class="p-4">Digital Solution Companies</td>
+                        <td class="p-4">For hospitals/labs/clinics/nursing homes using their software</td>
+                        <td class="p-4">100 transactions per month</td>
+                        <td class="p-4">&#8377;5 per transaction per month</td>
+                    </tr>
+                    <tr class="border-b border-gray-300">
+                        <td class="p-4"></td>
+                        <td class="p-4">For health locker/teleconsultation transactions</td>
+                        <td class="p-4">500 transactions per month</td>
+                        <td class="p-4">&#8377;5 per additional transaction above the base level.</td>
+                    </tr>
+                    <tr>
+                        <td class="p-4">Insurance Provider</td>
+                        <td class="p-4">Every insurance claim linked to ABHA, submitted via the Health Claim Exchange.</td>
+                        <td class="p-4"></td>
+                        <td class="p-4">&#8377;500 per claim or 10% of the claim amount, whichever is lower.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- Body section 6   -->
+<div class="mt-[150px]">
+    <h2 class="font-bold text-3xl md:text-[32px] text-blue-900 mb-4">
+        Frequently Asked Questions (FAQs)
+    </h2>
+    <p class="text-[18px] font-normal text-gray-600 mb-4 mt-3" style="word-spacing: 5px;">Got questions? We’ve
+        got answers!</p>
+
+    <div class="space-y-10">
+        <div class=" border-b pb-2 border-[#f7f7f8]">
+            <button
+                class="w-full text-left font-medium text-[18px] text-[#101828] flex justify-between items-center cursor-pointer "
+                onclick="toggleFAQ(1)">
+                I am facing issues with my ABHA, whom can I contact?
+                <span id="icon-1"><img src="https://i.postimg.cc/MZ3zrWp2/Icon-3.png" alt="icon3" /></span>
+            </button>
+            <p id="answer-1" class="text-gray-600 mt-2 font-normal text-[16px]" style="word-spacing: 2px;">
+                If you are facing any issues with your ABHA, you can contact the following support channels:
+                <br/><br/>
+                ABHA Helpline: You can reach out to the official ABHA helpline for assistance.</p>
+        </div>
+
+        <div class="border-b pb-2 border-[#f7f7f8] ">
+            <button
+                class="w-full text-left font-medium text-[18px] text-[#101828] flex justify-between items-center cursor-pointer "
+                onclick="toggleFAQ(2)">
+                Is ABHA (Health ID) and ABHA Card Free?
+                <span id="icon-2"><img src="https://i.postimg.cc/d0csm4th/Icon-2.png" alt="icon2" /></span>
+            </button>
+            <p id="answer-2" class="hidden text-gray-600 mt-2 font-normal text-[16px]" style="word-spacing: 2px;">
+                  You can create an ABHA ID and generate an ABHA Card at no cost through the official 
+                   <a href="https://healthid.ndhm.gov.in" target="_blank" class="text-blue-600 underline">
+                   ABHA website
+                   </a>, the Arogya Setu app, or the ABHA mobile app.
+             </p>
+        </div>
+
+        <div class="border-b pb-2 border-[#f7f7f8] ">
+            <button
+                class="w-full text-left font-medium text-[18px] text-[#101828] flex justify-between items-center cursor-pointer "
+                onclick="toggleFAQ(3)">
+                Can I use my ABHA in private hospitals?
+                <span id="icon-3"><img src="https://i.postimg.cc/d0csm4th/Icon-2.png" alt="icon2" /></span>
+            </button>
+            <p id="answer-3" class="hidden text-gray-600 mt-2 font-normal text-[16px]"
+                style="word-spacing: 2px;">A
+                Health Record Management – If the private hospital is ABDM-compliant, 
+                they can access your health records digitally with your consent.</p>
+        </div>
+        <div class="border-b pb-2 border-[#f7f7f8]">
+            <button
+                class="w-full text-left font-medium text-[18px] text-[#101828] flex justify-between items-center cursor-pointer "
+                onclick="toggleFAQ(4)">
+                What are the benefits of an ABHA?
+                <span id="icon-4"><img src="https://i.postimg.cc/d0csm4th/Icon-2.png" alt="+" /></span>
+            </button>
+            <p id="answer-4" class="hidden text-gray-600 mt-2 font-normal text-[16px]"> 
+                Access Anytime, Anywhere – Securely store and access your medical history, prescriptions, and lab reports digitally.
+                <br/>
+                Paperless Healthcare – No need to carry physical documents for doctor visits.</p>
+        </div>
+
+        <div class="border-b pb-2 border-[#f7f7f8]">
+            <button
+                class="w-full text-left font-medium text-[18px] text-[#101828] flex justify-between items-center cursor-pointer "
+                onclick="toggleFAQ(5)">
+                What is the ABHA number?
+                <span id="icon-5"><img src="https://i.postimg.cc/d0csm4th/Icon-2.png" alt="+" /></span>
+            </button>
+            <p id="answer-5" class="hidden text-gray-600 mt-2 font-normal text-[16px]">
+                The ABHA number (Ayushman Bharat Health Account number) is a 
+                14-digit unique identification number assigned to individuals under the Ayushman Bharat Digital Mission (ABDM).</p>
+        </div>
+
+        <div class="border-b pb-2 border-[#f7f7f8]">
+            <button
+                class="w-full text-left font-medium text-[18px] text-[#101828] flex justify-between items-center cursor-pointer"
+                onclick="toggleFAQ(6)">
+                What is the difference between ABHA and Ayushman Bharat - Pradhan Mantri Jan Arogya Yojana (PM-JAY)?
+                <span id="icon-6" class="flex-shrink-0">
+                    <img src="https://i.postimg.cc/d0csm4th/Icon-2.png" alt="+" class="w-6 h-6"/>
+                </span>
+            </button>
+            <p id="answer-6" class="hidden text-gray-600 mt-2 font-normal text-[16px]">
+                Purpose: ABHA is a digital health ID initiative that is part of the Ayushman Bharat Digital Mission (ABDM). It aims to provide every Indian citizen with a unique health ID. This ID acts as a repository for an individual's health records, making it easier for people to access and share their health data across healthcare providers.
+            </p>
+        </div>
+     </div>
+  </div>
+ </div>
+
+    <!-- Footer section          -->
+    <footer class="bg-[#004A86] text-white mt-[150px]">
+        <div class="relative py-4 px-4 md:px-20">
+            <div class="mt-[110px] max-w-6xl mx-auto text-center md:text-left">
+                <h2 class="text-3xl md:text-[46px] font-bold">Stay Informed</h2>
+                <div class="flex flex-col md:flex-row items-center gap-6 mt-6">
+                    <p class="text-lg md:text-xl font-normal text-center md:text-left">
+                        Sign up today to stay updated with the latest news, updates, and exciting developments about
+                        HOLO!
+                    </p>
+                    <div class="w-full md:w-auto flex justify-center">
+                        <div
+                            class="relative flex items-center bg-[#004A86] border-2 border-white rounded-full w-full md:w-[334px] p-1 py-3">
+                            <input type="email" placeholder="Enter your email"
+                                class="text-white placeholder-white bg-transparent px-4 pr-20 flex-grow outline-none"
+                                aria-label="Email">
+                            <button
+                                class="absolute right-[-1px] bg-white text-[#004A86] px-6 py-3 rounded-full font-semibold">
+                                Subscribe
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-6 gap-8 mt-16 text-sm text-center md:text-left">
+                    <div>
+                        <h3 class="font-bold text-lg">Cowin</h3>
+                        <ul class="mt-4 space-y-2 text-gray-300">
+                            <li>Book vaccination slot</li>
+                            <li>Download certificate</li>
+                            <li>Change mobile number</li>
+                            <li>Add passport details</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg">Products</h3>
+                        <ul class="mt-4 space-y-2 text-gray-300">
+                            <li>For doctors</li>
+                            <li>For patients</li>
+                            <li>GMB for doctors</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg">Specialities</h3>
+                        <ul class="mt-4 space-y-2 text-gray-300">
+                            <li>EMR for neurologists</li>
+                            <li>EMR for dentists</li>
+                            <li>EMR for pediatricians</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg">About</h3>
+                        <ul class="mt-4 space-y-2 text-gray-300">
+                            <li>Home</li>
+                            <li>API disclosure</li>
+                            <li>Team</li>
+                            <li>Careers</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg">Privacy & Security</h3>
+                        <ul class="mt-4 space-y-2 text-gray-300">
+                            <li>Terms and conditions</li>
+                            <li>Privacy policy</li>
+                            <li>Security</li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col items-center md:items-start">
+                        <img src="https://i.postimg.cc/nVwWfNJD/HOLO-2.png" alt="Holo2 Logo" class="w-28 mt-2" />
+                        <div class="flex space-x-5 mt-4">
+                            <img src="https://i.postimg.cc/xd05zPQQ/Link-1.png" alt="Facebook"
+                                class="w-6 h-6 cursor-pointer" />
+                            <img src="https://i.postimg.cc/B6zBR9KZ/Link-2.png" alt="Twitter"
+                                class="w-6 h-6 cursor-pointer" />
+                            <img src="https://i.postimg.cc/K4SrvPfd/Link-3.png" alt="Instagram"
+                                class="w-6 h-6 cursor-pointer" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="relative w-full h-56 bg-no-repeat bg-bottom bg-cover bottom-[64px]"
+            style="background-image: url('https://i.postimg.cc/rwmPfY9f/Clip-path-group.png');">
+        </div>
+    </footer>
+
+</body>
+
+</html>

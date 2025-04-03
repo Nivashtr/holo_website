@@ -1,48 +1,78 @@
+const primary_color = "#004A86";
 document.addEventListener('DOMContentLoaded', function() {
-  const menuToggle = document.getElementById('menuToggle');
-  const mobileMenu = document.getElementById('mobileMenu');
-  const closeMenu = document.getElementById('closeMenu');
-  
-  menuToggle.addEventListener('click', function() {
-    mobileMenu.classList.add('active');
-    document.body.style.overflow = 'hidden';
-    menuToggle.style.display = 'none';
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const closeMenu = document.getElementById('closeMenu');
+    
+    menuToggle.addEventListener('click', function() {
+      mobileMenu.classList.add('active');
+      document.body.style.overflow = 'hidden';
+      menuToggle.style.display = 'none';
+    });
+    
+
+    closeMenu.addEventListener('click', function() {
+      mobileMenu.classList.remove('active');
+      document.body.style.overflow = '';
+      menuToggle.style.display = 'block';
+    });
   });
+
+
+ 
+
+
   
-
-  closeMenu.addEventListener('click', function() {
-    mobileMenu.classList.remove('active');
-    document.body.style.overflow = '';
-    menuToggle.style.display = 'block';
-  });
-
-
-});
-
+  
 
 //   ecosystem section
-document.addEventListener("DOMContentLoaded", function () {
-    const buttons = document.querySelectorAll("[id$='-btn']");
 
-    buttons.forEach(button => {
-        button.addEventListener("click", function () {
-            buttons.forEach(btn => {
-                btn.classList.remove("active-btn", "bg-white");
-                btn.classList.add("bg-transparent");
-                btn.querySelector("p").classList.remove("text-[#004A86]");
-                btn.querySelector("p").classList.add("text-white");
-                btn.querySelector("div > div").style.filter = "brightness(0) invert(1)"; // Change icon color
+//   function onClick(){
+    
+//   }
+ 
+let c_index = 0;
+
+  const _eco_Category = document.querySelectorAll('#eco_category');
+
+  _eco_Category.forEach((el)=>{
+    el.addEventListener("click",()=>{
+        c_index = el.dataset.index;
+        change_eco_style();
+    })
+  })
+
+  const change_eco_style = ()=>{
+    _eco_Category.forEach((el)=>{
+        const index  = el.dataset.index;
+        const category = el.dataset.category
+        if(c_index == index){
+            el.style.background = 'white';
+            Array.from(el.children).forEach((cl,index) => {
+                if(index == 0){
+                    cl.id = category
+                }
+                if(index == 1){
+                    cl.style.color = primary_color;
+                }
+                
             });
+        }else{
+            el.style.background = 'transparent';
+            Array.from(el.children).forEach((cl,index) => {
+                if(index == 0){
+                    cl.id = category+'-white'
+                }
+                if(index == 1){
+                    cl.style.color = 'white';
+                }
+                
+            });
+        }
+      })
+  }
 
-            this.classList.add("active-btn", "bg-white");
-            this.classList.remove("bg-transparent");
-            this.querySelector("p").classList.remove("text-white");
-            this.querySelector("p").classList.add("text-[#004A86]");
-            this.querySelector("div > div").style.filter = ""; // Restore original icon color
-        });
-    });
-});
-
+  change_eco_style();
 
 
 

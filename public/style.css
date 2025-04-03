@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-body{
+
+body {
     font-family: "Outfit", sans-serif;
     overflow-x: hidden;
 }
+
 nav ul li a {
     position: relative;
     text-decoration: none;
@@ -31,8 +33,9 @@ nav ul li a:not(.noHover):hover::after {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
-  }
-  .mobile-menu.active {
+}
+
+.mobile-menu.active {
     opacity: 1;
     visibility: visible;
 }
@@ -40,7 +43,7 @@ nav ul li a:not(.noHover):hover::after {
 
 
 /* hero page */
-.heroContainer{
+.heroContainer {
     width: 100vw;
     height: calc(100vh - 100px);
     margin-left: 32px;
@@ -48,114 +51,184 @@ nav ul li a:not(.noHover):hover::after {
     align-items: center;
     justify-content: center;
 }
-.heroImgContainer{
+
+.heroImgContainer {
     display: block;
 }
 
 /* Mobile (Default: Below 640px) */
 @media (max-width: 639px) {
-    .heroContainer{
+    .heroContainer {
         width: 100vw;
         padding-left: 16px;
         margin-left: 8px;
     }
-    .heroImgContainer{
+
+    .heroImgContainer {
         display: none;
     }
-  }
-  
-  /* Tablets (640px - 1023px) */
-  @media (min-width: 640px) and (max-width: 1023px) {
-    .heroContainer{
+}
+
+/* Tablets (640px - 1023px) */
+@media (min-width: 640px) and (max-width: 1023px) {
+    .heroContainer {
         width: 100vw;
         padding-left: 24px;
         margin-left: 0px;
     }
-    .heroImgContainer{
+
+    .heroImgContainer {
         display: none;
     }
-    #doc{
+
+    #doc {
         display: none;
     }
-  }
-  
-  /* Desktop (1024px and above) */
-  @media (min-width: 1024px) {
-    .heroContainer{
+}
+
+/* Desktop (1024px and above) */
+@media (min-width: 1024px) {
+    .heroContainer {
         width: 50vw;
         padding-left: 0px;
     }
-  }
+}
 
-  /* icons */
+/* icons */
 
-  #sam {
-	background: url('/icons.svg') no-repeat -9px -7px;
+#sam {
+    background: url('/icons.svg') no-repeat -9px -7px;
     stroke: transparent;
-	width: 32px;
-	height: 36px;
-  }
-  #emr {
-	background: url('/icons.svg') no-repeat -49px -10px;
+    width: 32px;
+    height: 36px;
+}
+
+#emr {
+    background: url('/icons.svg') no-repeat -49px -10px;
     stroke: transparent;
-	width: 32px;
-	height: 36px;
-  }
-  #dcm {
-	background: url('/icons.svg') no-repeat -92px -9px;
+    width: 32px;
+    height: 36px;
+}
+
+#dcm {
+    background: url('/icons.svg') no-repeat -92px -9px;
     stroke: transparent;
-	width: 26px;
-	height: 36px;
-  }
-  #vtn {
-	background: url('/icons.svg') no-repeat -132px -7px;
+    width: 26px;
+    height: 36px;
+}
+
+#vtn {
+    background: url('/icons.svg') no-repeat -132px -7px;
     stroke: transparent;
-	width: 26px;
-	height: 36px;
-  }
-  #spm {
-	background: url('/icons.svg') no-repeat -172px -9px;
+    width: 26px;
+    height: 36px;
+}
+
+#spm {
+    background: url('/icons.svg') no-repeat -172px -9px;
     stroke: transparent;
-	width: 26px;
-	height: 36px;
-  }
-  #dcp {
-	background: url('/icons.svg') no-repeat -209px -9px;
+    width: 26px;
+    height: 36px;
+}
+
+#dcp {
+    background: url('/icons.svg') no-repeat -209px -9px;
     stroke: transparent;
-	width: 34px;
-	height: 36px;
-  }
-  #sct {
-	background: url('/icons.svg') no-repeat -249px -9px;
+    width: 34px;
+    height: 36px;
+}
+
+#sct {
+    background: url('/icons.svg') no-repeat -249px -9px;
     stroke: transparent;
-	width: 32px;
-	height: 36px;
-  }
-  #occ {
-	background: url('/icons.svg') no-repeat -289px -10px;
+    width: 32px;
+    height: 36px;
+}
+
+#occ {
+    background: url('/icons.svg') no-repeat -289px -10px;
     stroke: transparent;
-	width: 32px;
-	height: 36px;
-  }
+    width: 32px;
+    height: 36px;
+}
 
 
 
-  #da {
-	background: url('/icons.svg') no-repeat -370px -8px;
+#da {
+    background: url('/icons.svg') no-repeat -370px -8px;
     stroke: transparent;
-	width: 22px;
-	height: 26px;
-  }
-  #pm{
-	background: url('/icons.svg') no-repeat -329px -8px;
-    stroke: transparent;
-	width: 24px;
-	height: 28px;
-  }
-  #am{
-	background: url('/icons.svg') no-repeat -410px -8px;
-    stroke: transparent;
-	width: 22px;
-	height: 28px;
-  }
+    width: 22px;
+    height: 26px;
+}
 
+#da-white {
+    background: url('/icons.svg') no-repeat -490px -8px;
+    width: 22px;
+    height: 26px;
+}
+
+#pm {
+    background: url('/icons.svg') no-repeat -449px -8px;
+    width: 24px;
+    height: 26px;
+}
+
+#pm-white {
+    background: url('/icons.svg') no-repeat -329px -8px;
+    stroke: transparent;
+    width: 24px;
+    height: 28px;
+}
+
+#am {
+    background: url('/icons.svg') no-repeat -530px -8px;
+    width: 22px;
+    height: 26px;
+}
+
+#am-white {
+    background: url('/icons.svg') no-repeat -410px -8px;
+    stroke: transparent;
+    width: 22px;
+    height: 28px;
+}
+
+.Data {
+    background: url('/icons.svg') no-repeat -490px -8px;
+    stroke: transparent;
+    width: 22px;
+    height: 26px;
+}
+
+.Patient {
+    background: url('/icons.svg') no-repeat -449px -8px;
+    stroke: transparent;
+    width: 24px;
+    height: 28px;
+}
+
+.Automation {
+    background: url('/icons.svg') no-repeat -530px -8px;
+    stroke: transparent;
+    width: 22px;
+    height: 28px;
+}
+
+#eco_category {
+    position: relative;
+    overflow: hidden;
+}
+
+.eco_hover {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    z-index: 10;
+    transition: all 100ms ease-in;
+}
+
+.eco_hover:hover {
+    background-color: rgba(255, 255, 255, 0.049);
+    transition: all 100ms ease-in;
+}

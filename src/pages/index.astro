@@ -187,7 +187,7 @@
 
 
     <!-- Ecosystem capabilities -->
-    <section class="mb-8 lg:mx-[120px] border-20 border-transparent">
+    <section class="mb-8 lg:mx-[120px] sm: border-20 border-transparent">
       <div class="text-center mb-4">
         <h1 class="text-[32px] sm:text-[36px] md:text-[40px] text-[#004A86] mb-2">Ecosystem capabilities</h1>
         <p class="mx-auto max-w-[90%] md:max-w-[1200px] text-[#4B596D] lg:px-23 md:px-20 sm:px-20">HOLO connects every aspect of healthcare operations, from data analytics and patient management to billing automation and third-party integrations, ensuring a seamless and efficient workflow.</p>        
@@ -195,23 +195,21 @@
       <div class="flex justify-center">
         <div class="flex flex-wrap md:flex-wrap lg:flex-nowrap justify-center w-full sm:w-[90%] md:w-[1200px] bg-[#F3FBFF] gap-4 rounded-[24px] p-4">
           <div class="sm:w-[80%] md:w-[282px] bg-[#004A86] rounded-[24px] p-4">
-            <div id="da-btn" class="w-full h-[64px] bg-white rounded-full flex items-center gap-2 justify-center mb-4 cursor-pointer active-btn">
-              <div class="w-8 h-6">
-                <div id="da"></div>
-              </div>
+            <div id="eco_category" data-category="da" data-index="0" class="w-full h-[50px] rounded-full flex items-center gap-2 pl-3 mb-4 cursor-pointer">
+                <div class="Data w-6 h-6" id="da"></div>
               <p class="text-[#004A86] font-medium">Data & analytics</p>
+              <div class="eco_hover"></div>
             </div>
-            <div id="pm-btn" class="w-full h-[64px] rounded-full flex items-center gap-2 justify-center mb-4 cursor-pointer">
-              <div class="w-6 h-6">
-                <div id="pm"></div>
-              </div>
+            <div id="eco_category" data-category="pm" data-index="1" class="w-full h-[50px] rounded-full flex items-center gap-2 pl-3 mb-4 cursor-pointer">
+             
+                <div class="Patient w-6 h-6" id="pm"></div>
               <p class="text-white font-medium">Patient management</p>
+              <div class="eco_hover"></div>
             </div>
-            <div id="am-btn" class="w-full h-[64px] rounded-full flex items-center gap-2 justify-center cursor-pointer">
-              <div class="w-6 h-6">
-                <div id="am"></div>
-              </div>
+            <div id="eco_category" data-category="am" data-index="2" class="w-full h-[50px] rounded-full flex items-center gap-2 pl-3 cursor-pointer">
+                <div class="Automation w-6 h-6" id="am"></div>
               <p class="text-white font-medium">Automation & billing</p>
+              <div class="eco_hover"></div>
             </div>
           </div>
           <div class="flex flex-col sm:flex-row gap-4 w-full pt-[24px]">

@@ -90,49 +90,49 @@ nav ul li a:not(.noHover):hover::after {
   /* icons */
 
   #sam {
-	background: url('../assets/icons.svg') no-repeat -9px -7px;
+	background: url('/icons.svg') no-repeat -9px -7px;
     stroke: transparent;
 	width: 32px;
 	height: 36px;
   }
   #emr {
-	background: url('../assets/icons.svg') no-repeat -49px -10px;
+	background: url('/icons.svg') no-repeat -49px -10px;
     stroke: transparent;
 	width: 32px;
 	height: 36px;
   }
   #dcm {
-	background: url('../assets/icons.svg') no-repeat -92px -9px;
+	background: url('/icons.svg') no-repeat -92px -9px;
     stroke: transparent;
 	width: 26px;
 	height: 36px;
   }
   #vtn {
-	background: url('../assets/icons.svg') no-repeat -132px -7px;
+	background: url('/icons.svg') no-repeat -132px -7px;
     stroke: transparent;
 	width: 26px;
 	height: 36px;
   }
   #spm {
-	background: url('../assets/icons.svg') no-repeat -172px -9px;
+	background: url('/icons.svg') no-repeat -172px -9px;
     stroke: transparent;
 	width: 26px;
 	height: 36px;
   }
   #dcp {
-	background: url('../assets/icons.svg') no-repeat -209px -9px;
+	background: url('/icons.svg') no-repeat -209px -9px;
     stroke: transparent;
 	width: 34px;
 	height: 36px;
   }
   #sct {
-	background: url('../assets/icons.svg') no-repeat -249px -9px;
+	background: url('/icons.svg') no-repeat -249px -9px;
     stroke: transparent;
 	width: 32px;
 	height: 36px;
   }
   #occ {
-	background: url('../assets/icons.svg') no-repeat -289px -10px;
+	background: url('/icons.svg') no-repeat -289px -10px;
     stroke: transparent;
 	width: 32px;
 	height: 36px;
@@ -141,19 +141,19 @@ nav ul li a:not(.noHover):hover::after {
 
 
   #da {
-	background: url('../assets/icons.svg') no-repeat -370px -8px;
+	background: url('/icons.svg') no-repeat -370px -8px;
     stroke: transparent;
 	width: 22px;
 	height: 26px;
   }
   #pm{
-	background: url('../assets/icons.svg') no-repeat -328px -7px;
+	background: url('/icons.svg') no-repeat -329px -8px;
     stroke: transparent;
-	width: 26px;
+	width: 24px;
 	height: 28px;
   }
   #am{
-	background: url('../assets/icons.svg') no-repeat -410px -7px;
+	background: url('/icons.svg') no-repeat -410px -8px;
     stroke: transparent;
 	width: 22px;
 	height: 28px;

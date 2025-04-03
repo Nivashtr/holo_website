@@ -1,21 +1,50 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const menuToggle = document.getElementById('menuToggle');
-    const mobileMenu = document.getElementById('mobileMenu');
-    const closeMenu = document.getElementById('closeMenu');
-    
-    menuToggle.addEventListener('click', function() {
-      mobileMenu.classList.add('active');
-      document.body.style.overflow = 'hidden';
-    });
-    
-
-    closeMenu.addEventListener('click', function() {
-      mobileMenu.classList.remove('active');
-      document.body.style.overflow = ''; 
-    });
-
-
+  const menuToggle = document.getElementById('menuToggle');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const closeMenu = document.getElementById('closeMenu');
+  
+  menuToggle.addEventListener('click', function() {
+    mobileMenu.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    menuToggle.style.display = 'none';
   });
+  
+
+  closeMenu.addEventListener('click', function() {
+    mobileMenu.classList.remove('active');
+    document.body.style.overflow = '';
+    menuToggle.style.display = 'block';
+  });
+
+
+});
+
+
+//   ecosystem section
+document.addEventListener("DOMContentLoaded", function () {
+    const buttons = document.querySelectorAll("[id$='-btn']");
+
+    buttons.forEach(button => {
+        button.addEventListener("click", function () {
+            buttons.forEach(btn => {
+                btn.classList.remove("active-btn", "bg-white");
+                btn.classList.add("bg-transparent");
+                btn.querySelector("p").classList.remove("text-[#004A86]");
+                btn.querySelector("p").classList.add("text-white");
+                btn.querySelector("div > div").style.filter = "brightness(0) invert(1)"; // Change icon color
+            });
+
+            this.classList.add("active-btn", "bg-white");
+            this.classList.remove("bg-transparent");
+            this.querySelector("p").classList.remove("text-white");
+            this.querySelector("p").classList.add("text-[#004A86]");
+            this.querySelector("div > div").style.filter = ""; // Restore original icon color
+        });
+    });
+});
+
+
+
 
   //ABHD PAGE SCRIPT
   //scroll number count

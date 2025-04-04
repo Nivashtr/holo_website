@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/3.3.5/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
 	<link rel="stylesheet" href="/solutionStyle.css">
     <script src="/solutionScript.js" defer></script>
+    <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <title>HOLO</title>
 </head>
 <body>
@@ -59,7 +62,7 @@
               </ul>
             </div>
         </div>
-        <section class="px-6 md:p-[60px] lg:p-[80px] py-6 md:py-9 lg:py-12 text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-6 md:gap-12 max-w-screen-xl mx-auto">
+        <section class="px-6 md:px-[60px] lg:px-[15px] py-6 md:py-9 lg:py-12 text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-6 md:gap-12 max-w-screen-xl mx-auto">
             <div class="md:w-1/2 space-y-4">
                 <h2 class="font-bold text-[2rem] sm:text-[32px] md:text-[2rem] lg:text-[2.5rem] text-[#004A86] leading-tight">
                     Enhancing healthcare with innovative and smart solutions.
@@ -185,10 +188,10 @@
             </div>
         </div>
     </section>
-   <!-- <div class="min-h-screen bg-gradient-to-br from-[#E8F1FA] via-[#F5F9FF] to-[#FFFFFF] p-10 flex items-center justify-center"> -->
+    <!-- <div class="min-h-screen bg-gradient-to-br from-[#E8F1FA] via-[#F5F9FF] to-[#FFFFFF] p-10 flex items-center justify-center"> -->
         <!-- <div class="max-w-6xl w-full bg-white shadow-lg rounded-xl p-10" -->
     
-        <div class="p-6 md:px-[60px] lg:px-[80px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-2">
+        <div class="p-6 md:px-[60px] lg:px-[50px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-2">
             <div class="flex flex-col justify-center items-center h-full flex-grow">
                 <img src="/images/iPad Air.png"
                      class="h-[506px] sm:h-[280px] md:h-[506px] lg:h-[480px] xl:h-[420px] w-auto object-contain">
@@ -244,11 +247,11 @@
                     </li>
                 </ul>
             </div>
-            <div class="flex flex-col justify-center flex-grow md:col-span-2 md:min-h-screen lg:col-span-1 lg:ml-[-36px]">
+            <div class="flex flex-col justify-center flex-grow md:col-span-2 md:min-h-screen lg:col-span-1 lg:mr-[40px]">
                 <h2 class="font-bold text-xl sm:text-xl md:text-[32px] lg:text-[20px] text-[#004A86] text-center md:text-left">
                     Smart Solutions for Seamless Healthcare Enhancing Workflows, Improving Care
                 </h2>
-                <p class="lg:mr-6 text-[#5A5A5A] text-sm sm:text-sm md:text-[16px] lg:text-[16px] md:leading-7 lg:leading-[22px] lg:mt-3 text-left">
+                <p class="lg:mr-6 text-[#5A5A5A] text-sm sm:text-sm md:text-[16px] lg:text-[16px] md:leading-7 lg:leading-[26px] lg:mt-3 text-left">
                     HOLO is an advanced digital healthcare solution designed to optimize clinical workflows and enhance 
                     patient management. With an intuitive interface, it empowers healthcare professionals through key 
                     features such as Appointment Management, Digital Case Sheets, Electronic Medical Records (EMR), 
@@ -298,44 +301,77 @@
         
     
             <div class="lg:w-1/6 hidden lg:block lg:mr-4"></div>
-            <div class="lg:w-1/2 mt-4 lg:p-6 space-y-6 p-6 rounded-[10px] border border-gray-300 w-full bg-white">
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div>
-                        <label class="block text-sm">First name</label>
-                        <input type="text" placeholder="Enter your first name" class="mt-2 w-full p-3 border border-gray-300 rounded-[10px] text-[12px]">
+            <!-- <form id="contactForm" class="w-full inline-block"> -->
+                <div class="lg:w-1/2 mt-4 lg:p-6 space-y-6 p-6 rounded-[10px] border border-gray-300 w-full bg-white">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm">First name</label>
+                            <input id="first-name" type="text" placeholder="Enter your first name" class="mt-2 w-full p-3 border border-gray-300 rounded-[10px] text-[12px]">
+                        </div>
+                        <div>
+                            <label class="block text-sm ">Last name</label>
+                            <input id="last-name" type="text" placeholder="Enter your last name" class="mt-2 w-full p-3 border border-gray-300 rounded-[10px] text-[12px]">
+                        </div>
+                        <div>
+                            <label class="block text-sm">Email</label>
+                            <input id="email" type="email" placeholder="Enter your email" class="mt-2 w-full p-3 border border-gray-300 rounded-[10px] text-[12px]">
+                        </div>
+                        <div class="relative w-full max-w-xs">
+                            <label class="block text-sm font-medium text-gray-700">Date and Time</label>
+                            <input type="text" id="date"
+                                class="mt-2 w-full p-3 text-start cursor-pointer border border-gray-300 rounded-lg text-sm"
+                                placeholder="Select Date & Time" readonly>
+                        
+                        </div>
+                        <div class="flex justify-center lg:mt-96 lg:absolute lg:flex-col gap-4">
+                            <!-- Calendar & Time Picker Container -->
+                            <div id="pickerContainer" class="picker-container border p-4 bg-white shadow-lg absolute mt-2 rounded-lg lg:w-[550px] z-50 hidden">
+                                <div class="flex flex-col lg:flex-row w-full">
+                                    <div class="w-1/2 border-r pr-2">
+                                        <input type="text" id="datePicker" class="hidden">
+                                        <div id="calendarContainer"></div>
+                                    </div>
+                                    <div class="w-full mt-5 lg:w-1/2">
+                                        <div class="h-[300px] overflow-y-auto">
+                                            <h3 id="selectedDate" class="text-center text-lg font-bold mb-2 ml-12">Select a Date</h3>
+                                            <div id="timeSlots" class="grid grid-cols-1 gap-1 ml-24"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                          
+                    
+
+                         
                     </div>
-                    <div>
-                        <label class="block text-sm ">Last name</label>
-                        <input type="text" placeholder="Enter your last name" class="mt-2 w-full p-3 border border-gray-300 rounded-[10px] text-[12px]">
-                    </div>
-                    <div>
-                        <label class="block text-sm">Email</label>
-                        <input type="email" placeholder="Enter your email" class="mt-2 w-full p-3 border border-gray-300 rounded-[10px] text-[12px]">
-                    </div>
-                    <div>
-                        <label class="block text-sm">Preferred date & time</label>
-                        <input type="datetime-local" class="mt-2 w-full p-3 border border-gray-300 rounded-[10px] text-[12px]">
-                    </div>
-                </div>
     
-                <div>
-                    <label class="block text-sm">How can we help you?</label>
-                    <textarea class="mt-2 w-full p-3 border border-gray-300 rounded-[10px] text-sm h-[186px] resize-none" placeholder="Tell us a little about you"></textarea>
-                </div>
+                    <div>
+                        <label class="block text-sm">How can we help you?</label>
+                        <textarea id="message" class="mt-2 w-full p-3 border border-gray-300 rounded-[10px] text-sm h-[186px] resize-none" placeholder="Tell us a little about you"></textarea>
+                    </div>
+                    <div class="w-[200px] scale-[0.85] origin-top-left">
+                        <div class="h-captcha w-fit" data-sitekey="36625b5e-95d8-4bf0-b964-a0ee2a5cad28"></div>
+                    </div>
     
-                <div class="grid grid-cols-1 gap-4">
-                    <!-- <button class="w-full py-3 border border-gray-300 rounded-[10px] h-10 text-sm">Close</button> -->
-                    <button class="w-full py-3 bg-[#004A86] text-white rounded-[10px] h-10 text-sm cursor-pointer">Book a Free Demo</button>
+                    <div class="grid grid-cols-1 gap-4">
+                        <button id="contactForm" class="w-full py-3 bg-[#004A86] text-white rounded-[10px] h-10 text-sm cursor-pointer">
+                            Book a Free Demo
+                        </button>
+                    </div>
+                    <p id="errorMessage" class="text-red-500 hidden"></p>
+                    <p id="successMessage" class="text-green-500 hidden"></p>
+                    
+                    <div class="flex items-start space-x-2 md:space-x-3 text-start">
+                        <label class="flex items-start space-x-2 md:space-x-3 text-start cursor-pointer">
+                            <input type="checkbox" class="w-4 md:w-4 h-4 md:h-5 border-gray-400 rounded focus:ring-[#004A86] cursor-pointer">
+                            <p class="text-gray-600 text-sm font-light text-[16px] [word-spacing:2px]">
+                                I wish to receive newsletters from Holo
+                            </p>
+                        </label>
+                    </div>
                 </div>
-                <div class="flex items-start space-x-2 md:space-x-3 text-start">
-                    <label class="flex items-start space-x-2 md:space-x-3 text-start cursor-pointer">
-                        <input type="checkbox" class="w-4 md:w-4 h-4 md:h-5 border-gray-400 rounded focus:ring-[#004A86] cursor-pointer">
-                        <p class="text-gray-600 text-sm font-light text-[16px] [word-spacing:2px]">
-                            I wish to receive newsletters from Holo
-                        </p>
-                    </label>
-                </div>
-            </div>
+            <!-- </form> -->
         </div>
     </div>
        

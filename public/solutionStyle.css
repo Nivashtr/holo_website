@@ -36,3 +36,7 @@ nav ul li a:not(.noHover):hover::after {
     opacity: 1;
     visibility: visible;
 }
+#pickerContainer {
+    display: none;
+}
+    

@@ -1,0 +1,275 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOLO</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+	<link rel="stylesheet" href="/contact.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="/solutionScript.js" defer></script>
+    <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  </head>
+  <body>
+    <section class="bg-white w-screen min-h-screen bg-cover bg-no-repeat mb-10 ">
+      <!-- Header -->
+      <div class="flex items-center justify-between h-[100px] px-4 md:px-8 py-6 md:py-10 lg:px-30 ">
+        <div class="logo">
+          <img src="https://i.postimg.cc/vZkjVVQN/HOLO.png" width="100" height="23.14" alt="HOLO Logo">
+        </div>
+        <nav>
+          <button id="menuToggle" class="text-[#004A86] lg:hidden z-50 relative">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+          </button>
+          <ul class="hidden lg:flex text-[#004A86] items-center">
+            <li class="pl-8"><a class="px-0 py-2 hover:bg-transparent" href="/">Home</a></li>
+            <li class="pl-8"><a class="px-0 py-2 hover:bg-transparent" href="/solution">Solution</a></li>
+            <li class="pl-8"><a class="px-0 py-2 hover:bg-transparent" href="/contact">Contact</a></li>
+            <!-- <li class="pl-8">
+              <a href="/abhd" class="flex items-center px-0 py-2 noHover">
+                ABDM <i class="ti ti-chevron-down ml-2 text-m"></i>
+              </a>
+            </li> -->
+            <!-- <li class="pl-8"><a class="px-0 py-2 hover:bg-transparent" href="#">Hub</a></li> -->
+          </ul>
+        </nav>
+      </div>
+      
+      <!-- Mobile Menu Overlay -->
+      <div id="mobileMenu" class="mobile-menu fixed inset-0 bg-[#022F53] bg-opacity-95 flex items-center justify-center z-40 h-screen w-screen">
+        <div class="relative w-full">
+          <!-- Close button -->
+          <button id="closeMenu" class="absolute top-6 right-6 text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+          
+          <!-- Centered Menu Items -->
+          <ul class="text-white text-center">
+            <li class="py-4"><a href="/" class="block text-xl">Home</a></li>
+            <li class="py-4"><a href="/solution" class="block text-xl">Solution</a></li>
+            <li class="py-4"><a href="/contact" class="block text-xl">Contact</a></li>
+            <!-- <li class="py-4">
+              <a href="/abhd" class="inline-flex items-center text-xl ">ABDM <i class="fa fa-chevron-down ml-2"></i></a>
+            </li>
+            <li class="py-4"><a href="#" class="block text-xl">Hub</a></li> -->
+          </ul>
+        </div>
+      </div>
+
+      
+    <!-- //contactform -->
+        <div class="mt-[40px]">
+          <h1 class="text-center text-[32px] sm:text-[36px] md:text-[40px] text-black">Get in Touch</h1>
+          <p class=" text-center text-[14px] sm:text-[16px] text-[#4B596D] mb-5 sm:mb-6 md:mb-8 lg:pr-[32px]">We'd love to hear from you! Fill in your details, and our team will connect with you soon.</p>
+        </div>
+
+        <!-- //form -->
+
+        <div class="px-6 lg:px-[120px] md:px-[60px] mt-10">
+            <div class="flex flex-col lg:flex-row lg:gap-4 items-strech p-6 rounded-[10px] border border-gray-300 bg-[#004A86]">
+                <div class="lg:w-1/2 space-y-4 relative w-full h-full">
+                    <h2 class="font-semibold text-3xl md:text-4xl lg:text-[46px] text-white">Book a demo today!</h2>
+                    <p class="text-base md:text-lg lg:text-xl leading-9 text-white md:w-[509px]">
+                        Experience the power of Holo Health firsthand. Discover how our intuitive platform simplifies health management, enhances patient care, and streamlines operations. Schedule your free demo today and take the first step toward smarter healthcare!
+                    </p>
+        
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-6 mt-4 md:w-[509px] lg:mt-10">
+                        <div class="flex flex-col justify-start">
+                            <img src="https://i.postimg.cc/05GnJvHK/1.png" class="h-10 mx-auto">
+                            <h2 class="font-light text-xs text-center text-white mt-2">Real-time health monitoring</h2>
+                        </div>
+                        <div class="flex flex-col justify-start">
+                            <img src="https://i.postimg.cc/QM4tzFtK/cal.png" class="h-10 mx-auto text-white">
+                            <h2 class="font-light text-xs text-center text-white mt-2">AI-powered insights</h2>
+                        </div>
+                        <div class="flex flex-col justify-start">
+                            <img src="https://i.postimg.cc/yNBYxFJZ/3.png" class="h-10 mx-auto">
+                            <h2 class="font-light text-xs text-center text-white mt-2">Seamless scheduling</h2>
+                        </div>
+                        <div class="flex flex-col justify-start">
+                            <img src="https://i.postimg.cc/BQKqChHF/4.png" class="h-10 mx-auto">
+                            <h2 class="font-light text-xs text-center text-white mt-2">Secure & easy-to-use</h2>
+                        </div>
+                        <div class="flex flex-col justify-start">
+                            <img src="https://i.postimg.cc/pVg9x5BD/5.png" class="h-10 mx-auto">
+                            <h2 class="font-light text-xs text-center text-white mt-2">Automated Billing & Payments</h2>
+                        </div>
+                    </div>
+                </div>
+            
+        
+                <!-- <div class="lg:w-1/6 hidden lg:block lg:mr-4"></div> -->
+                <!-- <form id="contactForm" class="w-full inline-block"> -->
+                    <div class="lg:w-1/2 h-full mt-4 space-y-6 p-6 rounded-[10px] border border-gray-300 w-full bg-white">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm">First name</label>
+                                <input id="first-name" type="text" placeholder="Enter your first name" class="mt-2 w-full p-3 border border-gray-300 rounded-[10px] text-[12px]">
+                            </div>
+                            <div>
+                                <label class="block text-sm ">Last name</label>
+                                <input id="last-name" type="text" placeholder="Enter your last name" class="mt-2 w-full p-3 border border-gray-300 rounded-[10px] text-[12px]">
+                            </div>
+                            <div>
+                                <label class="block text-sm">Email</label>
+                                <input id="email" type="email" placeholder="Enter your email" class="mt-2 w-full p-3 border border-gray-300 rounded-[10px] text-[12px]">
+                            </div>
+                            <div class="relative w-full max-w-xs">
+                                <label class="block text-sm font-medium text-gray-700">Date and Time</label>
+                                <input type="text" id="date"
+                                    class="mt-2 w-full p-3 text-start cursor-pointer border border-gray-300 rounded-lg text-sm"
+                                    placeholder="Select Date & Time" readonly>
+                            
+                            </div>
+                            <div class="flex justify-center lg:mt-96 lg:absolute lg:flex-col gap-4">
+                                <!-- Calendar & Time Picker Container -->
+                                <div id="pickerContainer" class="picker-container border p-4 bg-white shadow-lg absolute mt-2 rounded-lg lg:w-[550px] z-50 hidden">
+                                    <div class="flex flex-col lg:flex-row w-full">
+                                        <div class="w-1/2 border-r pr-2">
+                                            <input type="text" id="datePicker" class="hidden">
+                                            <div id="calendarContainer"></div>
+                                        </div>
+                                        <div class="w-full mt-5 lg:w-1/2">
+                                            <div class="h-[300px] overflow-y-auto">
+                                                <h3 id="selectedDate" class="text-center text-lg font-bold mb-2 ml-12">Select a Date</h3>
+                                                <div id="timeSlots" class="grid grid-cols-1 gap-1 ml-24"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                              
+                        
+    
+                             
+                        </div>
+        
+                        <div>
+                            <label class="block text-sm">How can we help you?</label>
+                            <textarea id="message" class="mt-2 w-full p-3 border border-gray-300 rounded-[10px] text-sm h-[186px] resize-none" placeholder="Tell us a little about you"></textarea>
+                        </div>
+                        <div class="w-[200px] scale-[0.85] origin-top-left">
+                            <div class="h-captcha w-fit" data-sitekey="36625b5e-95d8-4bf0-b964-a0ee2a5cad28"></div>
+                        </div>
+        
+                        <div class="grid grid-cols-1 gap-4">
+                            <button id="contactForm" class="w-full py-3 bg-[#004A86] text-white rounded-[10px] h-10 text-sm cursor-pointer">
+                                Book a Free Demo
+                            </button>
+                        </div>
+                        <p id="errorMessage" class="text-red-500 hidden"></p>
+                        <p id="successMessage" class="text-green-500 hidden"></p>
+                        
+                        <div class="flex items-start space-x-2 md:space-x-3 text-start">
+                            <label class="flex items-start space-x-2 md:space-x-3 text-start cursor-pointer">
+                                <input type="checkbox" class="w-4 md:w-4 h-4 md:h-5 border-gray-400 rounded focus:ring-[#004A86] cursor-pointer">
+                                <p class="text-gray-600 text-sm font-light text-[16px] [word-spacing:2px]">
+                                    I wish to receive newsletters from Holo
+                                </p>
+                            </label>
+                        </div>
+                    </div>
+                <!-- </form> -->
+            </div>
+        </div>
+    
+
+    <!-- //footer -->
+
+
+    <footer class="bg-[#004A86] text-white mt-[100px]">
+        <div class="relative py-4 border-[30px] border-transparent lg:px-[90px] md:px-[40px]">
+            <div class="mt-[50px]  text-center md:text-left">
+                <h2 class="text-3xl md:text-[46px] font-bold">Stay Informed</h2>
+                <div class="flex flex-col md:flex-row items-center gap-6 mt-6">
+                    <p class="text-lg md:text-xl font-normal text-center md:text-left pr-10">
+                        Sign up today to stay updated with the latest news, updates, and exciting developments about
+                        HOLO!
+                    </p>
+                    <!-- <div class="w-full md:w-auto flex justify-center">
+                        <div
+                            class="relative flex items-center bg-[#004A86] border-2 border-white rounded-full w-full md:w-[334px] p-1 py-3">
+                            <input type="email" placeholder="Enter your email"
+                                class="text-white placeholder-white bg-transparent px-4 pr-20 flex-grow outline-none"
+                                aria-label="Email">
+                            <button
+                                class="absolute right-[-1px] bg-white text-[#004A86] px-6 py-3 rounded-full font-semibold">
+                                Subscribe
+                            </button>
+                        </div>
+                    </div> -->
+                </div>
+ 
+                <div class="grid grid-cols-2 md:grid-cols-6 gap-8 mt-16 text-sm text-center md:text-left">
+                    <!-- <div> -->
+                        <!-- <h3 class="font-bold text-lg">Cowin</h3>
+                        <ul class="mt-4 space-y-2 text-gray-300">
+                            <li>Book vaccination slot</li>
+                            <li>Download certificate</li>
+                            <li>Change mobile number</li>
+                            <li>Add passport details</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg">Products</h3>
+                        <ul class="mt-4 space-y-2 text-gray-300">
+                            <li>For doctors</li>
+                            <li>For patients</li>
+                            <li>GMB for doctors</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg">Specialities</h3>
+                        <ul class="mt-4 space-y-2 text-gray-300">
+                            <li>EMR for neurologists</li>
+                            <li>EMR for dentists</li>
+                            <li>EMR for pediatricians</li>
+                        </ul>
+                    </div> -->
+                    <div>
+                        <h3 class="font-bold text-lg">About</h3>
+                        <ul class="mt-4 space-y-2 text-gray-300">
+                          <li><a href="/">Home</a></li>
+                          <li><a href="/solution">Solution</a></li>
+                          <li><a href="/contact">Contact</a></li>
+                            <!-- <li>Team</li>
+                            <li>Careers</li> -->
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg">Privacy & Security</h3>
+                        <ul class="mt-4 space-y-2 text-gray-300">
+                            <li><a href="#">Terms and conditions</a> </li>
+                            <li><a href="#">Privacy policy</a> </li>
+                            <li><a href="#">Security</a> </li>
+                        </ul>
+                    </div>
+                    <!-- <div class="flex flex-col items-center md:items-start">
+                        <img src="https://i.postimg.cc/nVwWfNJD/HOLO-2.png" alt="Holo2 Logo" class="w-28 mt-2" />
+                        <div class="flex space-x-5 mt-4">
+                            <img src="https://i.postimg.cc/xd05zPQQ/Link-1.png" alt="Facebook"
+                                class="w-6 h-6 cursor-pointer" />
+                            <img src="https://i.postimg.cc/B6zBR9KZ/Link-2.png" alt="Twitter"
+                                class="w-6 h-6 cursor-pointer" />
+                            <img src="https://i.postimg.cc/K4SrvPfd/Link-3.png" alt="Instagram"
+                                class="w-6 h-6 cursor-pointer" />
+                        </div>
+                    </div> -->
+                </div>
+            <!-- </div> -->
+        </div>
+        <div class="relative w-full h-[10vh]  bg-center object-cover bg-no-repeat"
+            style="background-image: url('https://i.postimg.cc/rwmPfY9f/Clip-path-group.png');">
+        </div>
+    </footer>
+</body>
+</html>

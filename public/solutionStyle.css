@@ -39,4 +39,60 @@ nav ul li a:not(.noHover):hover::after {
 #pickerContainer {
     display: none;
 }
-    
+
+
+#sam {
+    background: url('/icons.svg') no-repeat -9px -7px;
+    stroke: transparent;
+    width: 32px;
+    height: 36px;
+}
+
+#emr {
+    background: url('/icons.svg') no-repeat -49px -10px;
+    stroke: transparent;
+    width: 32px;
+    height: 36px;
+}
+
+#dcm {
+    background: url('/icons.svg') no-repeat -92px -9px;
+    stroke: transparent;
+    width: 26px;
+    height: 36px;
+}
+
+#vtn {
+    background: url('/icons.svg') no-repeat -132px -7px;
+    stroke: transparent;
+    width: 26px;
+    height: 36px;
+}
+
+#spm {
+    background: url('/icons.svg') no-repeat -172px -9px;
+    stroke: transparent;
+    width: 26px;
+    height: 36px;
+}
+
+#dcp {
+    background: url('/icons.svg') no-repeat -209px -9px;
+    stroke: transparent;
+    width: 34px;
+    height: 36px;
+}
+
+#sct {
+    background: url('/icons.svg') no-repeat -249px -9px;
+    stroke: transparent;
+    width: 32px;
+    height: 36px;
+}
+
+#occ {
+    background: url('/icons.svg') no-repeat -289px -10px;
+    stroke: transparent;
+    width: 32px;
+    height: 36px;
+}

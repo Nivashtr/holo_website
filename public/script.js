@@ -1,25 +1,27 @@
 const primary_color = "#004A86";
-document.addEventListener('DOMContentLoaded', function() {
-    const menuToggle = document.getElementById('menuToggle');
-    const mobileMenu = document.getElementById('mobileMenu');
-    const closeMenu = document.getElementById('closeMenu');
+
+const hamburger = document.getElementById('hamburger');
+const navmenu = document.getElementById('navmenu');
+
+hamburger.addEventListener('click', (e) => {
+  e.stopPropagation();
+  hamburger.classList.toggle('active');
+  hamburger.style.color ='#004A86';
+  navmenu.classList.toggle('active');
+});
+
+// Close menu when clicking outside
+document.addEventListener('click', (e) => {
+  const isClickInsideMenu = navmenu.contains(e.target);
+  const isClickOnHamburger = hamburger.contains(e.target);
+
+  if (!isClickInsideMenu && !isClickOnHamburger) {
+    hamburger.classList.remove('active');
+    hamburger.style.color = '';
+    navmenu.classList.remove('active');
     
-    menuToggle.addEventListener('click', function() {
-      mobileMenu.classList.add('active');
-      document.body.style.overflow = 'hidden';
-      menuToggle.style.display = 'none';
-    });
-    
-
-    closeMenu.addEventListener('click', function() {
-      mobileMenu.classList.remove('active');
-      document.body.style.overflow = '';
-      menuToggle.style.display = 'block';
-    });
-  });
-
-
- 
+  }
+});
 
 
   

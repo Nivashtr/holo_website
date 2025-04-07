@@ -12,22 +12,17 @@
 	<script src="/script.js" defer></script>
   </head>
   <body>
-    <section class="bg-[url(https://i.postimg.cc/44cG513s/bg-1.png)] w-screen min-h-screen bg-cover bg-no-repeat mb-10 lg:px-30 ">
+    <section class="bg-[url(https://i.postimg.cc/44cG513s/bg-1.png)] w-screen min-h-screen bg-cover bg-no-repeat mb-10">
       <!-- Header -->
-      <div class="flex items-center justify-between h-[100px] px-4 md:px-8 py-6 md:py-10">
+      <div class="flex items-center justify-between h-[100px] px-4 md:px-8 py-6 md:py-10 lg:px-32  ">
         <div class="logo">
           <img src="https://i.postimg.cc/d0KnQ0WK/HOLO.png" width="100" height="23.14" alt="HOLO Logo">
         </div>
-        <nav>
-          <button id="menuToggle" class="text-white lg:hidden z-50 relative">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
-          </button>
-          <ul class="hidden lg:flex text-white items-center">
-            <li class="pl-8"><a class="px-0 py-2 hover:bg-transparent" href="/">Home</a></li>
-            <li class="pl-8"><a class="px-0 py-2 hover:bg-transparent" href="/solution">Solution</a></li>
-            <li class="pl-8"><a class="px-0 py-2 hover:bg-transparent" href="/contact">Contact</a></li>
+        <nav class="navbar">
+          <ul id="navmenu" class="lg:flex text-white items-center pt-[30px]">
+            <li id="navitem" class="lg:pl-8"><a class="px-0 py-2 hover:bg-transparent" href="/">Home</a></li>
+            <li id="navitem" class="lg:pl-8"><a class="px-0 py-2 hover:bg-transparent" href="/solution">Solution</a></li>
+            <li  id="navitem" class="lg:pl-8"><a class="px-0 py-2 hover:bg-transparent" href="/contact">Contact</a></li>
             <!-- <li class="pl-8">
               <a href="/abhd" class="flex items-center px-0 py-2 noHover">
                 ABDM <i class="ti ti-chevron-down ml-2 text-m"></i>
@@ -35,36 +30,18 @@
             </li> -->
             <!-- <li class="pl-8"><a class="px-0 py-2 hover:bg-transparent" href="#">Hub</a></li> -->
           </ul>
+          <div id="hamburger" class="lg:hidden">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
         </nav>
-      </div>
-      
-      <!-- Mobile Menu Overlay -->
-      <div id="mobileMenu" class="mobile-menu fixed inset-0 bg-[#022F53] bg-opacity-95 flex items-center justify-center z-40 h-screen w-screen">
-        <div class="relative w-full">
-          <!-- Close button -->
-          <button id="closeMenu" class="absolute top-6 right-6 text-white">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
-          
-          <!-- Centered Menu Items -->
-          <ul class="text-white text-center">
-            <li class="py-4"><a href="/" class="block text-xl">Home</a></li>
-            <li class="py-4"><a href="/solution" class="block text-xl">Solution</a></li>
-            <li class="py-4"><a href="/contact" class="block text-xl">Contact</a></li>
-            <!-- <li class="py-4">
-              <a href="/abhd" class="inline-flex items-center text-xl ">ABDM <i class="fa fa-chevron-down ml-2"></i></a>
-            </li>
-            <li class="py-4"><a href="#" class="block text-xl">Hub</a></li> -->
-          </ul>
-        </div>
       </div>
 
 	  <div class="heroContainer">
-      <div class="heroContextContainer ">
-        <div class="text-white">
-            <h1 class="text-[2rem] md:text-[2rem] lg:text-[2.5rem] font-bold mb-4 md:mb-6 leading-12 ">
+      <div class="heroContextContainer">
+        <div class="text-white ">
+            <h1 id="heading" class="text-[2rem] md:text-[2rem] lg:text-[2.5rem] font-bold mb-4 md:mb-6 leading-12">
                 Transforming healthcare, one smart solution at a time.
             </h1>
             <p class="text-[1.25rem] md:text-lg mb-6 md:mb-8 pr-[60px]">
@@ -97,9 +74,9 @@
 
 
     <!-- aboutHolo -->
-    <section class="mb-10">
+    <section class="">
       <div>
-        <h1 class="text-center text-[32px] sm:text-[36px] md:text-[40px] text-[#004A86]">About HOLO</h1>
+        <h1 class="lg:text-center text-[32px] sm:text-[36px] md:text-[40px] text-[#004A86] px-[32px] text-left">About HOLO</h1>
       </div>
       <div class="flex flex-col lg:flex-row items-center justify-center md:px-[16px] px-[32px] mt-8 md:mt-12 relative">
         <div class="relative w-full lg:w-1/2 flex justify-center lg:left-[-32px]">
@@ -108,7 +85,7 @@
                 <div class="absolute w-full lg:w-1/2 pb-10">
           <img src="https://i.postimg.cc/2yQPf2qW/waves-1.png" alt="" class="absolute max-h-[200px] max-w-full  sm:left-[-200px] lg:left-[-500px]  lg:md:auto md:top-[-300px] lg:top-[-50px] sm:auto top-[-190px] object-contain z-[1]">
         </div>
-        <div class="w-full lg:w-1/2 text-[#303030] max-w-2xl px-2 sm:px-6 lg:pr-[32px]">
+        <div class="w-full lg:w-1/2 text-[#303030] max-w-2xl  sm:px-6 lg:pr-[32px]">
             <h1 class="text-[28px] sm:text-[32px] md:text-[36px] lg:text-[40px] font-medium mb-4 sm:mb-5 md:mb-6 leading-tight ">Transforming healthcare with <span class="text-[#004A86]">smart automation</span></h1>
             <p class="text-[14px] sm:text-[16px] text-[#4B596D] mb-5 sm:mb-6 md:mb-8 sm-w-1/2 lg:text-left lg:pr-[32px]"> At <span class="text-[#004A86] font-semibold">HOLO</span>, we revolutionize healthcare by addressing key challenges such as cumbersome paperwork, complex patient onboarding, lost doctor notes, and inefficient medical document tracking. Our SaaS platform streamlines patient records, billing, appointment management, and workflow automation, <br/>ensuring seamless and secure hospital operations.</p>
             <p class="text-[14px] sm:text-[16px] text-[#4B596D] mb-5 sm:mb-6 md:mb-8 lg:pr-[32px]">
@@ -122,67 +99,89 @@
     </section>
     
     <!-- product feature -->
-    <section class="mb-10 lg:px-[32px]">
-      <div class="">
-        <h1 class="text-center text-[32px] sm:text-[36px] md:text-[40px] text-[#004A86] mb-2">Product Features</h1>
-        <p class="mx-auto max-w-[90%] md:max-w-[1200px] lg:px-20 md:px-30 sm:px-30 text-[#4B596D] text-center" >HOLO offers a comprehensive suite of features designed to streamline hospital operations. From digital case sheets and automated workflow management to real-time tracking and secure patient records, our platform ensures efficiency, accuracy, and a seamless healthcare experience.</p>        
-      </div>
-      <div class="  flex flex-wrap justify-center gap-[24px] pt-[32px] ">
-        <div class="w-[282px] h-[294px] bg-[#F3FBFF] rounded-[24px] pt-[32px] ">
-          <div  class="ml-[32px] mb-[8px]">
-            <div id="sam"></div>
-          </div>
-          <h5 class="text-[#000000] pl-[32px] text-[18px] pt-[8px] ">Smart appointment management</h5>
-          <p class="pl-[32px] pt-[8px] text-[#5A5A5A] text-[16px] pr-[32px]">Effortlessly schedule, modify, and organize patient visits with a seamless calendar-based system, ensuring smooth clinic operations.</p>
+    <section class="w-full mx-auto px-[32px] py-12 md:py-16">
+      <div class="max-w-6xl mx-auto">
+        <!-- Heading Section -->
+        <div class="mb-8 md:mb-12">
+          <h1 class=" lg:text-center text-[28px] sm:text-[32px] md:text-[36px] lg:text-[40px] text-[#004A86] font-bold mb-4">Product Features</h1>
+          <p class="text-[#4B596D] lg:text-center text-base sm:text-lg">
+            HOLO offers a comprehensive suite of features designed to streamline hospital operations. From digital case sheets and automated workflow management to real-time tracking and secure patient records, our platform ensures efficiency, accuracy, and a seamless healthcare experience.
+          </p>        
         </div>
-        <div class="w-[282px] h-[294px] bg-[#F3FBFF] rounded-[24px] pt-[32px]">
-          <div  class="ml-[32px] mb-[8px]">
-            <div id="emr"></div>
+        
+        <!-- Features Cards Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6 justify-center mt-8">
+          <!-- Feature 1 -->
+          <div class="bg-[#F3FBFF] rounded-2xl p-6 flex flex-col h-full">
+            <div class="mb-4 ml-1">
+              <div id="sam"></div>
+            </div>
+            <h5 class="text-[#000000] text-lg font-medium mb-2">Smart appointment management</h5>
+            <p class="text-[#5A5A5A] text-sm md:text-base">Effortlessly schedule, modify, and organize patient visits with a seamless calendar-based system, ensuring smooth clinic operations.</p>
           </div>
-          <h5 class="text-[#000000] pl-[32px] text-[18px] pt-[8px]">Electronic medical records (EMR)</h5>
-          <p class="pl-[32px] pt-[8px] pr-[32px] text-[#5A5A5A] text-[16px]">A secure, cloud-based system grants authorized access to patient records anytime, reducing paperwork and errors.</p>
-        </div>
-        <div class="w-[282px] h-[294px] bg-[#F3FBFF] rounded-[24px] pt-[32px]">
-          <div  class="ml-[32px] mb-[8px]">
-            <div id="dcm"></div>
+          
+          <!-- Feature 2 -->
+          <div class="bg-[#F3FBFF] rounded-2xl p-6 flex flex-col h-full">
+            <div class="mb-4 ml-1">
+              <div id="emr"></div>
+            </div>
+            <h5 class="text-[#000000] text-lg font-medium mb-2">Electronic medical records (EMR)</h5>
+            <p class="text-[#5A5A5A] text-sm md:text-base">A secure, cloud-based system grants authorized access to patient records anytime, reducing paperwork and errors.</p>
           </div>
-          <h5 class="text-[#000000] pl-[32px] text-[18px] pt-[8px]">Digital case sheets management</h5>
-          <p class="pl-[32px] pt-[8px] pr-[32px] text-[#5A5A5A] text-[16px]">Go paperless with customizable case sheets, enabling doctors to document, annotate, and retrieve patient records instantly.</p>
-        </div>
-        <div class="w-[282px] h-[294px] bg-[#F3FBFF] rounded-[24px] pt-[32px]">
-          <div  class="ml-[32px] mb-[8px]">
-            <div id="vtn"></div>
+          
+          <!-- Feature 3 -->
+          <div class="bg-[#F3FBFF] rounded-2xl p-6 flex flex-col h-full">
+            <div class="mb-4 ml-1">
+              <div id="dcm"></div>
+            </div>
+            <h5 class="text-[#000000] text-lg font-medium mb-2">Digital case sheets management</h5>
+            <p class="text-[#5A5A5A] text-sm md:text-base">Go paperless with customizable case sheets, enabling doctors to document, annotate, and retrieve patient records instantly.</p>
           </div>
-            <h5 class="text-[#000000] pl-[32px] text-[18px] pr-[90px] pt-[8px] ">Voice & touch notations</h5>
-            <p class="pl-[32px] pt-[8px] pr-[32px] text-[#5A5A5A] text-[16px]">Doctors can scribble notes or record voice memos directly into patient files for efficient and accurate medical documentation.</p>
-        </div>
-        <div class="w-[282px] h-[294px] bg-[#F3FBFF] rounded-[24px] pt-[32px]">
-          <div  class="ml-[32px] mb-[8px]">
-            <div id="spm"></div>
+          
+          <!-- Feature 4 -->
+          <div class="bg-[#F3FBFF] rounded-2xl p-6 flex flex-col h-full">
+            <div class="mb-4 ml-1">
+              <div id="vtn"></div>
+            </div>
+            <h5 class="text-[#000000] text-lg font-medium mb-2">Voice & touch notations</h5>
+            <p class="text-[#5A5A5A] text-sm md:text-base">Doctors can scribble notes or record voice memos directly into patient files for efficient and accurate medical documentation.</p>
           </div>
-            <h5 class="text-[#000000] pl-[32px] text-[18px] pr-[40px] pt-[8px]">Streamlined patient & billing management</h5>
-            <p class="pl-[32px] pt-[8px] pr-[32px] text-[#5A5A5A] text-[16px]">Simplify patient invoicing, rate plans, and GST compliance with automated billing workflows, reducing manual errors.</p>
-        </div>
-        <div class="w-[282px] h-[294px] bg-[#F3FBFF] rounded-[24px] pt-[32px]">
-          <div  class="ml-[32px] mb-[15px]">
-            <div id="dcp"></div>
+          
+          <!-- Feature 5 -->
+          <div class="bg-[#F3FBFF] rounded-2xl p-6 flex flex-col h-full">
+            <div class="mb-4 ml-1">
+              <div id="spm"></div>
+            </div>
+            <h5 class="text-[#000000] text-lg font-medium mb-2">Streamlined patient & billing management</h5>
+            <p class="text-[#5A5A5A] text-sm md:text-base">Simplify patient invoicing, rate plans, and GST compliance with automated billing workflows, reducing manual errors.</p>
           </div>
-            <h5 class="text-[#000000] pl-[32px] text-[18px] pr-[60px]">Doctor discovery platform</h5>
-            <p class="pl-[32px] pt-[8px] pr-[32px] text-[#5A5A5A] text-[16px]">Help patients connect with specialists and healthcare providers based on their specific needs, ensuring better healthcare access.</p>
-        </div>
-        <div class="w-[282px] h-[294px] bg-[#F3FBFF] rounded-[24px] pt-[32px]">
-          <div  class="ml-[32px] mb-[8px]">
-            <div id="sct"></div>
+          
+          <!-- Feature 6 -->
+          <div class="bg-[#F3FBFF] rounded-2xl p-6 flex flex-col h-full">
+            <div class="mb-4 ml-1">
+              <div id="dcp"></div>
+            </div>
+            <h5 class="text-[#000000] text-lg font-medium mb-2">Doctor discovery platform</h5>
+            <p class="text-[#5A5A5A] text-sm md:text-base">Help patients connect with specialists and healthcare providers based on their specific needs, ensuring better healthcare access.</p>
           </div>
-            <h5 class="text-[#000000] pl-[32px] text-[18px] pr-[60px] pt-[8px]">Surgery & consent tracking</h5>
-            <p class="pl-[32px] pt-[8px] pr-[32px] text-[#5A5A5A] text-[16px]">Manage surgical workflows, track consent forms, and ensure compliance, enhancing the efficiency of surgical procedures and follow-ups.</p>
-        </div>
-        <div class="w-[282px] h-[294px] bg-[#F3FBFF] rounded-[24px] pt-[32px]">
-          <div  class="ml-[32px] mb-[8px]">
-            <div id="occ"></div>
+          
+          <!-- Feature 7 -->
+          <div class="bg-[#F3FBFF] rounded-2xl p-6 flex flex-col h-full">
+            <div class="mb-4 ml-1">
+              <div id="sct"></div>
+            </div>
+            <h5 class="text-[#000000] text-lg font-medium mb-2">Surgery & consent tracking</h5>
+            <p class="text-[#5A5A5A] text-sm md:text-base">Manage surgical workflows, track consent forms, and ensure compliance, enhancing the efficiency of surgical procedures and follow-ups.</p>
           </div>
-            <h5 class="text-[#000000] pl-[32px] text-[18px] pr-[60px] pt-[8px]">Omni-channel communication</h5>
-            <p class="pl-[32px] pt-[8px] pr-[32px] text-[#5A5A5A] text-[16px]">Send important updates, appointment reminders, and medical reports via whatsapp, sms, and email, keeping patients informed.</p>
+          
+          <!-- Feature 8 -->
+          <div class="bg-[#F3FBFF] rounded-2xl p-6 flex flex-col h-full">
+            <div class="mb-4 ml-1">
+              <div id="occ"></div>
+            </div>
+            <h5 class="text-[#000000] text-lg font-medium mb-2">Omni-channel communication</h5>
+            <p class="text-[#5A5A5A] text-sm md:text-base">Send important updates, appointment reminders, and medical reports via whatsapp, sms, and email, keeping patients informed.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -191,8 +190,8 @@
     <!-- Ecosystem capabilities -->
     <section class="mb-8 lg:mx-[120px] sm: border-20 border-transparent">
       <div class="text-center mb-4">
-        <h1 class="text-[32px] sm:text-[36px] md:text-[40px] text-[#004A86] mb-2">Ecosystem capabilities</h1>
-        <p class="mx-auto max-w-[90%] md:max-w-[1200px] text-[#4B596D] lg:px-23 md:px-20 sm:px-20">HOLO connects every aspect of healthcare operations, from data analytics and patient management to billing automation and third-party integrations, ensuring a seamless and efficient workflow.</p>        
+        <h1 class="mx-auto max-w-[90%] md:max-w-[1200px] text-[32px] sm:text-[36px] md:text-[40px] text-[#004A86] mb-2 lg:text-center text-left">Ecosystem capabilities</h1>
+        <p class="mx-auto max-w-[90%] md:max-w-[1200px] text-[#4B596D] lg:px-23 md:px-20 sm:px-20 lg:text-center text-left text-[14px] sm:text-[16px]">HOLO connects every aspect of healthcare operations, from data analytics and patient management to billing automation and third-party integrations, ensuring a seamless and efficient workflow.</p>        
       </div>
       <div class="flex justify-center">
         <div class="flex flex-wrap md:flex-wrap lg:flex-nowrap justify-center w-full sm:w-[90%] md:w-[1200px] bg-[#F3FBFF] gap-4 rounded-[24px] p-4">
@@ -236,7 +235,7 @@
             <div class="mt-[50px]  text-center md:text-left">
                 <h2 class="text-3xl md:text-[46px] font-bold">Stay Informed</h2>
                 <div class="flex flex-col md:flex-row items-center gap-6 mt-6">
-                    <p class="text-lg md:text-xl font-normal text-center md:text-left pr-10">
+                    <p class="text-lg md:text-xl font-normal text-center md:text-left">
                         Sign up today to stay updated with the latest news, updates, and exciting developments about
                         HOLO!
                     </p>

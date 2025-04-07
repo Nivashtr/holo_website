@@ -1,23 +1,14 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const menuToggle = document.getElementById('menuToggle');
-    const mobileMenu = document.getElementById('mobileMenu');
-    const closeMenu = document.getElementById('closeMenu');
-    
-    menuToggle.addEventListener('click', function() {
-      mobileMenu.classList.add('active');
-      menuToggle.style.color='white';
-      document.body.style.overflow = 'hidden';
-      menuToggle.style.display = 'none';
-    });
-    
-    closeMenu.addEventListener('click', function() {
-      mobileMenu.classList.remove('active');
-      menuToggle.style.color='';
-      document.body.style.overflow = ''; 
-      menuToggle.style.display = 'block';
-    });
+const hamburger = document.getElementById('hamburger');
+const navmenu = document.getElementById('navmenu');
 
-  });
+hamburger.addEventListener('click', (e) => {
+  e.stopPropagation();
+  hamburger.classList.toggle('active');
+  hamburger.style.color ='#004A86';
+  navmenu.classList.toggle('active');
+});
+
+
   document.addEventListener("DOMContentLoaded", () => {
     lucide.createIcons();
   });
